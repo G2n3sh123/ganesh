@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+        <!-- Bootstrap Font Icon CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="style.css">
+</head>
+
+    <body class="dark-theme bg-hospital" data-aos-easing="ease" data-aos-duration="800" data-aos-delay="0">
+        <div class="top-bar  p-1 bg-hospital">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-md-8 d-none d-sm-block ">
+                        <ul class="list-group list-group-horizontal-xl">
+                            <li class="language-switcher list-group-item box">
+                                <a href="suggestion.html"><i class="fa fa-comments"></i> सुझाव तथा
+                                    गुनासो </a>
+                            </li>
+                            <li class="bandMode list-group-item box">
+
+                                <a href="suggestion.html" style="display: -webkit-inline-box;"><i class="bi bi-spinner"></i> लो
+                                    ब्यान्डविड्थ</a>
+
+                            </li>
+                            <li class="themeMode list-group-item box">
+                                <a href="screenreader.html"><i class="fa fa-wheelchair"></i> स्क्रीन रीडर </a>
+                            </li>
+                            <li class="list-group-item d-none d-sm-block box">
+                                <i class="fa fa-phone" aria-hidden="true"></i> ०६१-५३६२५४ , ०६१-५३६२५५
+                            </li>
+                            <li class="list-group-item d-none d-sm-block">
+                                <i class="fa fa-calendar"></i>
+                                <span class="currentNepaliDate">२१ भाद्र २०७९, मङ्गलवार</span>
+                                <p></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 ">
+                        <ul class="list-group list-group-horizontal-xl float-right">
+
+                            <li class="language-switcher list-group-item box">
+                                <a href="english.html" style="display: -webkit-inline-box;"> <i class="bi bi-language"></i>
+                                    <div class="d-none d-md-block"> &nbsp; English</div>
+                                </a>
+                            </li>
+                            <li class="themeMode list-group-item box">
+                                <a href="screenreader.html" style="display: -webkit-inline-box;"> <i class="bi bi-moon"></i>
+                                    <div class="d-none d-md-block"> &nbsp; Dark</div>
+                                </a>
+
+                            </li>
+                            <li class="list-group-item fontResizer box">
+                                <span onclick="fontchangeplus()">
+                                    A+
+                                </span>
+
+                                <span onclick="fontchangenormal()">
+                                    A
+                                </span>
+
+                                <span onclick="fontchangeminus()">
+                                    A-
+                                </span>
+
+                            <li class="list-group-item box">
+                                <a href="">
+                                    <i class="bi bi-facebook"></i>
+
+                                </a>
+                            </li>
+                            <li class="list-group-item box">
+                                <a href="">
+                                    <i class="bi bi-twitter"></i>
+
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header bg-hospital container-flued" style="padding-bottom:1px;">
+            <div class="container aos-init aos-animate" data-aos="flip-down">
+                <div class="row">
+                    <div class="col-md-2">
+                        <center>
+                            <a href=""><img src="https://phsmc.gandaki.gov.np/images/site-config/nepal-logo.png"
+                                    class="img-fluid img-logo" style="padding-top:16px; width: 125px;"></a>
+                        </center>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="custom-name" style="text-align:center;">
+                            <p class="govname" style="line-height:25px; margin:0;padding:0; font-size: 18px;"> प्रदेश
+                                सरकार<br>
+                                स्वास्थ्य तथा जनसंख्या मन्त्रालय <br>
+                            </p>
+                            <h1 class="officename" style="font-size:28px; margin:0px; line-height:40px; padding:0px">
+                                प्रदेश स्वास्थ्य आपूर्ति व्यवस्थापन केन्द्र</h1>
+                            <p class="addressname" style="line-height:22px;margin:0;padding:0;font-size: 16px">
+                                गण्डकी प्रदेश, पोखरा नेपाल
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-flex justify-content-center ">
+
+
+                        <img src="https://phsmc.gandaki.gov.np/images/logo/nepaliflag.gif"
+                            class="national-flag float-right d-none d-sm-block" style="width:90px; height:120px">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">अगाडि आउनुहोस्</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href=""> हाम्रो बारेमा</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"> सूचना</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> समाचार</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> प्रकाशन</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> डाउनलोड</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> मिडिया</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">बारम्बार सोधिने प्रश्नहरु</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"> सम्पर्क</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col aos-init aos-animate" data-aos="zoom-in">
+                    <div class="breaking-news-ticker newsticker" id="post-title-marquee-scroll">
+                        <div class="">
+                            <button class="btn btn-warning">हाइलाइटहरू</button>
+                        </div>
+                        <div class="ptms_marquee">
+                            <marquee scrollamount="5" scrolldelay="7" direction="left" onmouseover="this.stop()"
+                                onmouseout="this.start()">
+                                <p style="font-size:1.125rem;"><a href="">स्थानीय तहमा वार्षिक योजना तथा बजेट तर्जुमा
+                                        सम्बन्धी मार्गदर्सन</a> || <a href="">Promotion
+                                        Application Form</a> || <a href="">Abnormal
+                                        Leave Application Form</a> || <a href="">Health
+                                        Sector Strategy in Nepali</a> || <a href="">स्वास्थ्य
+                                        संस्था स्थापना, संचालन तथा स्तरोन्नती मापदण्ड सम्वन्धि (दोश्रो संशोधन)
+                                        निर्देशिका, २०७३</a> || </p>
+                            </marquee>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="section_slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+
+                        <div id="demo" class="carousel slide py-2" data-ride="carousel">
+                            <ul class="carousel-indicators active">
+
+                                <li data-target="#demo" data-slide-to="1" class=""></li>
+                                <li data-target="#demo" data-slide-to="2" class=""></li>
+                                <li data-target="#demo" data-slide-to="3" class=""></li>
+                                <li data-target="#demo" data-slide-to="4" class=""></li>
+                                <li data-target="#demo" data-slide-to="5" class="active"></li>
+                                <li data-target="#demo" data-slide-to="6" class=""></li>
+                                <li data-target="#demo" data-slide-to="7" class=""></li>
+                                <li data-target="#demo" data-slide-to="8" class=""></li>
+                                <li data-target="#demo" data-slide-to="9" class=""></li>
+                                <li data-target="#demo" data-slide-to="10" class=""></li>
+                                <li data-target="#demo" data-slide-to="11" class=""></li>
+                            </ul>
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item">
+                                    <img src="https://phsmc.gandaki.gov.np/images/sliders/16623711137484_viber_image_2022-09-05_11-24-20-779.jpg"
+                                        alt="" width="100%" height="563" style="border-radius:15px; object-fit: cover;">
+                                    <div class="carousel-caption" style="background:#0000004d;">
+                                        <h4 class="animated fadeInUp text-white">बायोमेडिकल उपकरण व्यवस्थापन इकाईको
+                                            शुभारम्भ कार्यक्रम</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://phsmc.gandaki.gov.np/images/sliders/16572183768662_slider2.jpeg"
+                                        alt="" width="100%" height="563" style="border-radius:15px; object-fit: cover;">
+                                    <div class="carousel-caption" style="background:#0000004d;">
+                                        <h4 class="animated fadeInUp text-white">प्रदेश स्वास्थ्य आपूर्ति व्यवस्थापन
+                                            केन्द्रका निर्देशक ज्यु बाट स्वास्थ्य कार्यालय मनाङ को निरीक्षण</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://phsmc.gandaki.gov.np/images/sliders/16572183156695_slider1.jpeg"
+                                        alt="" width="100%" height="563" style="border-radius:15px; object-fit: cover;">
+                                    <div class="carousel-caption" style="background:#0000004d;">
+                                        <h4 class="animated fadeInUp text-white">प्रदेशिक वायोमेडिकल व्यवस्थापन इकाइ
+                                            सन्चालन गर्नका लागि Nick Simons Institute सँग सम्झौता</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item active carousel-item-left">
+                                    <img src="https://phsmc.gandaki.gov.np/images/sliders/16572184534220_slider3.jpeg"
+                                        alt="" width="100%" height="563" style="border-radius:15px; object-fit: cover;">
+                                    <div class="carousel-caption" style="background:#0000004d;">
+                                        <h4 class="animated fadeInUp text-white">दमौली अस्पताल , तनहुँलाई कीटजन्य रोग
+                                            परिक्षण गर्नका लागि चाहिने कीट eLMIS प्रणाली बाट हस्तान्तरण</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item carousel-item-next carousel-item-left">
+                                    <img src="https://phsmc.gandaki.gov.np/images/sliders/16572189858192_slider10.jpeg"
+                                        alt="" width="100%" height="563" style="border-radius:15px; object-fit: cover;">
+                                    <div class="carousel-caption" style="background:#0000004d;">
+                                        <h4 class="animated fadeInUp text-white">आ व २०७७/२०७८ मा सम्पादित स्वास्थ्य
+                                            कार्यक्रमहरुको वार्षिक समीक्षा कार्यक्रम</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <img src="https://phsmc.gandaki.gov.np/images/sliders/16572184846447_slider4.jpeg"
+                                        alt="" width="100%" height="563" style="border-radius:15px; object-fit: cover;">
+                                    <div class="carousel-caption" style="background:#0000004d;">
+                                        <h4 class="animated fadeInUp text-white">बयोमेडिकल वर्कशप सुदढीकरण सम्वन्धमा
+                                            Nick Simon Institute सँग समन्वयात्मक छलफल</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <img src="https://phsmc.gandaki.gov.np/images/sliders/16572186015009_slider5.jpeg"
+                                        alt="" width="100%" height="563" style="border-radius:15px; object-fit: cover;">
+                                    <div class="carousel-caption" style="background:#0000004d;">
+                                        <h4 class="animated fadeInUp text-white">यस केन्द्रबाट खरिद गरी पोखरा स्वास्थ्य
+                                            बिज्ञान प्रतिस्ठानलाई हस्तान्तरण</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <img src="https://phsmc.gandaki.gov.np/images/sliders/16572186396193_slider6.jpeg"
+                                        alt="" width="100%" height="563" style="border-radius:15px; object-fit: cover;">
+                                    <div class="carousel-caption" style="background:#0000004d;">
+                                        <h4 class="animated fadeInUp text-white">Popular Chinese Actor Jackie Chan
+                                            donated 6 laks pieces masks to Gandaki Province Government</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <img src="https://phsmc.gandaki.gov.np/images/sliders/16572186705448_slider7.jpeg"
+                                        alt="" width="100%" height="563" style="border-radius:15px; object-fit: cover;">
+                                    <div class="carousel-caption" style="background:#0000004d;">
+                                        <h4 class="animated fadeInUp text-white">Popular Chinese Actor Jackie Chan
+                                            donated 6 laks pieces masks to Gandaki Province Government</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <img src="https://phsmc.gandaki.gov.np/images/sliders/16572186986750_slider8.jpeg"
+                                        alt="" width="100%" height="563" style="border-radius:15px; object-fit: cover;">
+                                    <div class="carousel-caption" style="background:#0000004d;">
+                                        <h4 class="animated fadeInUp text-white">आ व २०७७/२०७८ मा सम्पादित स्वास्थ्य
+                                            कार्यक्रमहरुको वार्षिक समीक्षा कार्यक्रम</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <img src="https://phsmc.gandaki.gov.np/images/sliders/16572189459899_slider9.jpeg"
+                                        alt="" width="100%" height="563" style="border-radius:15px; object-fit: cover;">
+                                    <div class="carousel-caption" style="background:#0000004d;">
+                                        <h4 class="animated fadeInUp text-white">कदर पत्र</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="staff-desk wow fadeInRight  animated" data-wow-duration="2s" data-wow-delay="0.2s"
+                            style="visibility: visible; animation-duration: 2s; animation-delay: 0.2s; animation-name: fadeInRight;">
+                            <span class="field-content">
+                                <div class="staff-photo">
+
+                                    <img typeof="foaf:Image"
+                                        src="https://scontent.fpkr1-1.fna.fbcdn.net/v/t39.30808-1/242694411_3054062701516490_7869530196765367285_n.jpg?stp=dst-jpg_s200x200&_nc_cat=101&ccb=1-7&_nc_sid=7206a8&_nc_ohc=2-yE8CEfUMUAX9I0ekb&_nc_ht=scontent.fpkr1-1.fna&oh=00_AT-xD0mjNjA4CdnKhZQqWx6eYE2qyTHCRLkri34N8zZ_Qg&oe=631DADE7"
+                                        width="138" height="140" alt="">
+                                </div>
+
+                                <div class="staff-info">
+                                    <h2>
+                                        शिव पौडेल</h2>
+                                    <p class="staff-name">निर्देशक</p>
+
+                                    <a href=""><button class="btn btn-info">पुरा
+                                            विवरण</button></a>
+
+                                </div>
+                            </span>
+                        </div>
+                        <div class="staff-desk wow fadeInRight  animated" data-wow-duration="2s" data-wow-delay="0.2s"
+                            style="visibility: visible; animation-duration: 2s; animation-delay: 0.2s; animation-name: fadeInRight;">
+                            <span class="field-content">
+                                <div class="staff-photo">
+
+                                    <img typeof="foaf:Image"
+                                        src="https://scontent.fpkr1-1.fna.fbcdn.net/v/t1.6435-9/103671429_1389574884560250_6846592378953721719_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=174925&_nc_ohc=awd41PQBzuEAX9hKIun&_nc_oc=AQkYAqbDmbk9fZeVHMDpn5U4zJ-nCiBrwYF57QIRkGyshkLH2cyGoWeQ_EMokDYgUx_yH9LENPnncqac2HzcCYmN&_nc_ht=scontent.fpkr1-1.fna&oh=00_AT_42BqTHAdLimiQbwG5kDdhAgG3xMSrskTcCWFw-_6sJA&oe=633C8FB8"
+                                        width="138" height="140" alt="">
+                                </div>
+
+                                <div class="staff-info">
+                                    <h2>
+                                        गणेश सुवेदी</h2>
+                                    <p class="staff-name">सूचना अधिकारी</p>
+
+                                    <a href=""><button class="btn btn-info">पुरा
+                                            विवरण</button></a>
+
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        </div>
+        </div>
+        </section>
+
+        <section class="section_about_us p-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 aos-init aos-animate" data-aos="zoom-in">
+                        <div class="about-us-sec wow fadeInLeft  animated mt-3" data-wow-duration="2s"
+                            data-wow-delay="0.2s"
+                            style="visibility: visible; animation-duration: 2s; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                            <h1 class="style__item">हाम्रो <span class="title_1"> बारेमा</span></h1>
+                            <div style="max-height:205px; overflow:hidden;">
+                                <p>प्रदेश स्वास्थ्य आपूर्ति व्यवस्थापन केन्द्र, गण्डकी प्रदेश यस प्रदेशमा स्वास्थ्य
+                                    आपूर्तिको प्रमुख प्राविधिक र प्रशासनिक इकाई हो। यस केन्द्रले प्रदेशमा स्वास्थ्यसंग
+                                    सम्बन्धित आपूर्तिको उचित व्यवस्थापन सुनिश्चित गर्दछ ।</p>
+
+                                <p>यस कार्यालयको मुख्य जिम्मेवारी निम्न अनुसारको कार्यहरु संचालन गर्ने/गराउने रहेको छ:
+                                </p>
+
+                                <p>आपूर्ति श्रृखला व्यवस्थापन सम्बन्धमा भएका सुधारका कार्य तथा प्रदेश स्तरमा अत्यावश्यक
+                                    औषधीहरु एवं सबै किसिमका स्वास्थ्य सामाग्री प्रवाहको पुनरावलोकन एवं आवश्यक प्रक्षेपण
+                                    तथा सिफारिस साथै चौमासिक तथा वार्षिक समीक्षा बैठकको आयोजना गर्ने ।</p>
+
+                                <p>आपूर्ति श्रृखला व्यवस्थापनसँग सम्बन्धित वार्षिक योजना, तर्जुमा गर्नुका साथै
+                                    अत्यावश्यक औषधिहरु एवं सबै किसिमका स्वास्थ्य सामग्रीहरु औजार उपकरणकोको खरिद,
+                                    भण्डारण, वितरण र ढुवानी चुस्त-दुरुस्त राख्ने ।</p>
+
+                                <p>आवश्यकता अनुसार विद्दुतीय आपूर्ति श्रृखला व्यवस्थापन सूचना प्रणालीलाई पुनरावलोकन गरी
+                                    अद्धावधिक गर्ने तथा आपुर्ति श्रृखला व्यवस्थापन प्रणालीमा आईपर्ने गम्भीर समस्या जस्तै
+                                    सामग्रीको शून्य मौज्दात, अत्याधिक मौज्दात, वितरणमा असन्तुलन हुन नदिन आवश्यक कार्य
+                                    गर्ने ।</p>
+
+                                <p>आपूर्ति श्रृखला व्यवस्थापनका लागि आवश्यक जनशक्ति विकासका साथै कार्यस्थलमा सिकाई
+                                    अभ्यासका निम्ती सहयोग गर्नुका साथै आपूर्ति श्रृखलालाई समय सापेक्ष बनाउन आवश्यक पर्ने
+                                    जनशक्ति एवं सो को निरन्तर विकास, आवश्यक ज्ञान, सीप र दक्षताको पहिचान गरी
+                                    प्रतिष्पर्धी र क्षमतायुक्त बनाउने ।</p>
+
+                                <p>आपूर्ति श्रृखला व्यवस्थापन विविध पक्षमा प्राविधिक दक्षता हासिल गर्न सम्बन्धित
+                                    निर्देशिका वा मापदण्ड अनुसार कर्मचारीको कार्यविवरण, कार्य मापदण्ड एवं स्तरीकरण,
+                                    सस्थागत तालिम, अनसाइट कोचिङ्ग मेन्टरिङ्ग लगायत प्राविधिक विशेषज्ञता प्रदान गर्ने ।
+                                </p>
+
+                                <p>अत्यावश्यक औषधिहरु एवं स्वास्थ्य सामग्रीहरुको आपूर्ति श्रृंखला सुधारका लागि
+                                    सराेकारवालाहरुको सुझावका आधारमा र्काय गर्नुका साथै विकास साझेदारहरुसँग आपसी सहयोग र
+                                    समन्वय गर्ने ।</p>
+
+                                <p>आपूर्ति श्रृखला व्यवस्थापनमा सुधार ल्याउनका लागि नविनतम कार्यको पहिचान र अवलम्बन
+                                    गर्नु/ गराउनुका साथै कुशल अभ्यास एवं प्रक्रिया बसाउन सहकार्य गर्ने ।</p>
+
+                                <p>आपूर्ति श्रृखलासँग जोडिएका सफलताका कथा, सिकाइ उपलब्धिहरु पहिचान गरी व्यवहारमा लागु
+                                    गर्ने ।</p>
+
+                                <p>आपूर्ति श्रृखंला व्यवस्थापनमा भएका कमी कमजोरीहरुको लेखाजोखा एवं मुल्याङ्कन गरी
+                                    सुधारका लागि आवश्यक कार्य गर्नुका साथै सम्बन्धीत नीति, रणनीति एवं निर्देशिकाको
+                                    पुनरावलोकन गरी सुधारका लागि आवश्यक कार्य गर्ने ।</p>
+
+                                <p>&nbsp;स्वास्थ्य तथा जनसंख्या मन्त्रालय, गण्डकी प्रदेश मातहत रही प्रदेशमा स्वास्थ्यसंग
+                                    सम्बन्धित आपूर्तिको उचित व्यवस्थापन सुनिश्चित गर्दछ ।</p>
+                            </div>
+                            <a href=""><button class="btn btn-info">सबै हेर्नुहोस्</button></a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+
+
+
+        <section class="section_news p-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 aos-init aos-animate" data-aos="zoom-in">
+                        <div class="nav-tabs-navigation shadow tap-box">
+                            <div class="nav-tabs-wrapper">
+                                <ul class="nav nav-tabs text-white" style="background-color: #006b96;" id="myTab"
+                                    role="tablist">
+                                    <li class="nav-item" style="width:33.333333333333%; text-align:center;">
+                                        <a class="nav-link active" id="news-tab" data-toggle="tab" href="#news"
+                                            role="tab" aria-controls="news" aria-selected="true"> <i
+                                                class="fas fa-book"></i> समाचार</a>
+                                    </li>
+                                    <li class="nav-item" style="width:33.333333333333%; text-align:center;">
+                                        <a class="nav-link " id="information-tab" data-toggle="tab" href="#information"
+                                            role="tab" aria-controls="information" aria-selected="true"> <i
+                                                class="far fa-images"></i> सूचना</a>
+                                    </li>
+                                    <li class="nav-item" style="width:33.333333333333%; text-align:center;">
+                                        <a class="nav-link " id="tender-tab" data-toggle="tab" href="#tender" role="tab"
+                                            aria-controls="tender" aria-selected="true"> <i class="fas fa-bullhorn"></i>
+                                            बोलपत्र</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade active show" id="news" role="tabpanel"
+                                        aria-labelledby="news-tab">
+                                        <ul>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="https://phsmc.gandaki.gov.np/list/news/naramanaethhana-karayalya-bhavana"
+                                                        class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a href="">
+                                                    <p>निर्माणाधिन कार्यालय भवन</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2022-01-30">१६ माघ
+                                                                २०७८, आइतवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="" class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a href="">
+                                                    <p>औषधि तथा स्वास्थ्य सामग्रीको उचित भण्डारण सम्बन्धी
+                                                        मार्गनिर्देशनहरु</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2022-01-24">१० माघ
+                                                                २०७८, सोमवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="https://phsmc.gandaki.gov.np/list/news/kabhada-varathathhaka-khapa-vataranae-garaeka-paramanae-dajama"
+                                                        class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a href="">
+                                                    <p>कोभिड-१९ विरुद्धको खोप वितरण गरिएको परिमाण (डोजमा)</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2022-01-24">१० माघ
+                                                                २०७८, सोमवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="https://phsmc.gandaki.gov.np/list/news/aava-ma-yasa-kanatharabta-jallharama-vataranae-garaeka-nayamata-khapaka-paramanae"
+                                                        class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a href="">
+                                                    <p>आ.व. २०७८/७९ मा यस केन्द्रबाट जिल्लाहरुमा वितरण गरिएका नियमित
+                                                        खोपको परिमाण</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2022-01-24">१० माघ
+                                                                २०७८, सोमवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="" class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a href="">
+                                                    <p>कोभिड-१९ विरुद्धको खोप स्वास्थ्य कार्यालय पर्वतमा पठाउँदै ।</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2022-01-16">२ माघ
+                                                                २०७८, आइतवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                        <div class="link text-right">
+                                            <a href=""><button class="btn btn-info">सबै हेर्नुहोस्</button></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane fade " id="information" role="tabpanel"
+                                        aria-labelledby="information-tab">
+                                        <ul>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="https://phsmc.gandaki.gov.np/list/information/info"
+                                                        class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a href="">
+                                                    <p>स्वास्थ्य आपूर्ति व्यवस्थापन सम्बन्धी सामान्य जानकारी</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2020-01-06">२१ पौष
+                                                                २०७६, सोमवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="" class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a href="">
+                                                    <p>आर्थिक वर्ष २०७७/७८ मा प्रदेश स्वास्थ्य आपूर्ति व्यवस्थापन
+                                                        केन्द्रबाट सम्पन्न कार्यक्रमहरूको वार्षिक प्रतिवेदन</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2022-01-06">२२ पौष
+                                                                २०७८, बिहिवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="" class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a href="">
+                                                    <p>आधारभुत स्वास्थ्य सेवाका औषधी तथा औषधीजन्य सामाग्रीहरुको खरिद
+                                                        बर्गिकरण</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2022-05-18">४ जेठ
+                                                                २०७९, बुधवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="https://phsmc.gandaki.gov.np/list/information/aakasatasana-aaparata-vayavasathapana-samabnathhama"
+                                                        class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a href="">
+                                                    <p>आक्सिटोसिन आपूर्ति व्यवस्थापन सम्बन्धमा</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2022-06-13">३० जेठ
+                                                                २०७९, सोमवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+                                    <div class="tab-pane fade " id="tender" role="tabpanel"
+                                        aria-labelledby="tender-tab">
+                                        <ul>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="" class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a href="">
+                                                    <p>Invitation for electronic Bids</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2022-03-08">२४ फाल्गुन
+                                                                २०७८, मङ्गलवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 aos-init aos-animate" data-aos="zoom-in">
+                        <div class="nav-tabs-navigation shadow tap-box">
+                            <div class="nav-tabs-wrapper">
+                                <ul class="nav nav-tabs text-white" style="background-color: #006b96;" id="myTab"
+                                    role="tablist">
+                                    <li class="nav-item" style="width:33.333333333333%; text-align:center;">
+                                        <a class="nav-link active" id="report-tab" data-toggle="tab" href="#report"
+                                            role="tab" aria-controls="report" aria-selected="true"> <i
+                                                class="fas fa-database"></i> प्रतिवेदन</a>
+                                    </li>
+                                    <li class="nav-item" style="width:33.333333333333%; text-align:center;">
+                                        <a class="nav-link " id="acts-and-policy-rules-tab" data-toggle="tab"
+                                            href="#acts-and-policy-rules" role="tab"
+                                            aria-controls="acts-and-policy-rules" aria-selected="true"> <i
+                                                class="fas fa-eye"></i> ऐन तथा नीति नियमावली</a>
+                                    </li>
+                                    <li class="nav-item" style="width:33.333333333333%; text-align:center;">
+                                        <a class="nav-link " id="forms-and-formats-tab" data-toggle="tab"
+                                            href="#forms-and-formats" role="tab" aria-controls="forms-and-formats"
+                                            aria-selected="true"> <i class="fas fa-file-alt"></i> फारम तथा ढाँचाहरु</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade active show" id="report" role="tabpanel"
+                                        aria-labelledby="report-tab">
+                                        <ul>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="https://phsmc.gandaki.gov.np/list/report/phlmc-annual-report-2077-78"
+                                                        class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a
+                                                    href="https://phsmc.gandaki.gov.np/list/report/phlmc-annual-report-2077-78">
+                                                    <p>PHLMC_Annual-Report-2077-78</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2021-09-23">७ आश्विन
+                                                                २०७८, बिहिवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="https://phsmc.gandaki.gov.np/list/report/sacanaka-haka-samabnathha-aina-bmajama-tayara-garaeka-sharavanae-thakha-asaja-masanata-samama"
+                                                        class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a
+                                                    href="https://phsmc.gandaki.gov.np/list/report/sacanaka-haka-samabnathha-aina-bmajama-tayara-garaeka-sharavanae-thakha-asaja-masanata-samama">
+                                                    <p>सुचनाको हक सम्बन्धी ऐन बमोजिम तयार गरिएको (श्रवण देखी असोज मसान्त
+                                                        सम्म)</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2021-07-16">१ श्रावण
+                                                                २०७८, शुक्रवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="https://phsmc.gandaki.gov.np/list/report/varashhaka-kharatha-yajana"
+                                                        class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a
+                                                    href="https://phsmc.gandaki.gov.np/list/report/varashhaka-kharatha-yajana">
+                                                    <p>वार्षिक खरिद योजना २०७८/७९</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2021-06-15">१ अषाढ
+                                                                २०७८, मङ्गलवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="https://phsmc.gandaki.gov.np/list/report/sacanaka-haka-samabnathha-aina-bmajama-tayara-garaeka-karataka-thakha-pashha-masanata-samama"
+                                                        class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a
+                                                    href="https://phsmc.gandaki.gov.np/list/report/sacanaka-haka-samabnathha-aina-bmajama-tayara-garaeka-karataka-thakha-pashha-masanata-samama">
+                                                    <p>सुचनाको हक सम्बन्धी ऐन बमोजिम तयार गरिएको (कार्तिक १ देखी पौष
+                                                        मसान्त सम्म)</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2021-10-18">१ कार्तिक
+                                                                २०७८, सोमवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="https://phsmc.gandaki.gov.np/list/report/info"
+                                                        class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a href="https://phsmc.gandaki.gov.np/list/report/info">
+                                                    <p>सुचनाको हक सम्बन्धी ऐन बमोजिम तयार गरिएको (माघ १ देखी चैत्र
+                                                        मसान्त सम्म)</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2022-01-15">१ माघ
+                                                                २०७८, शनिवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                        <div class="link text-right">
+                                            <a href=""><button class="btn btn-info">सबै हेर्नुहोस्</button></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane fade " id="acts-and-policy-rules" role="tabpanel"
+                                        aria-labelledby="acts-and-policy-rules-tab">
+                                        <ul>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="https://phsmc.gandaki.gov.np/list/acts-and-policy-rules/savasathaya-sasatha-sathapana-sacalna-tatha-satarananata-mapathanaeda-samavanathha-thashara-sashathhana-narathashaka"
+                                                        class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a
+                                                    href="https://phsmc.gandaki.gov.np/list/acts-and-policy-rules/savasathaya-sasatha-sathapana-sacalna-tatha-satarananata-mapathanaeda-samavanathha-thashara-sashathhana-narathashaka">
+                                                    <p>स्वास्थ्य संस्था स्थापना, संचालन तथा स्तरोन्नती मापदण्ड सम्वन्धि
+                                                        (दोश्रो संशोधन) निर्देशिका, २०७३</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2022-06-22">८ अषाढ
+                                                                २०७९, बुधवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="https://phsmc.gandaki.gov.np/list/acts-and-policy-rules/health-sector-strategy"
+                                                        class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a
+                                                    href="https://phsmc.gandaki.gov.np/list/acts-and-policy-rules/health-sector-strategy">
+                                                    <p>Health Sector Strategy</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2022-06-15">१ अषाढ
+                                                                २०७९, बुधवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="https://phsmc.gandaki.gov.np/list/acts-and-policy-rules/health-sector-strategy-in-nepali"
+                                                        class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a
+                                                    href="https://phsmc.gandaki.gov.np/list/acts-and-policy-rules/health-sector-strategy-in-nepali">
+                                                    <p>Health Sector Strategy in Nepali</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2022-06-22">८ अषाढ
+                                                                २०७९, बुधवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="https://phsmc.gandaki.gov.np/list/acts-and-policy-rules/gender-equity-and-social-inclusion-strategy"
+                                                        class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a
+                                                    href="https://phsmc.gandaki.gov.np/list/acts-and-policy-rules/gender-equity-and-social-inclusion-strategy">
+                                                    <p>Gender Equity and Social Inclusion Strategy</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2022-06-21">७ अषाढ
+                                                                २०७९, मङ्गलवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="https://phsmc.gandaki.gov.np/list/acts-and-policy-rules/national-health-policy-2071"
+                                                        class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a
+                                                    href="https://phsmc.gandaki.gov.np/list/acts-and-policy-rules/national-health-policy-2071">
+                                                    <p>National Health Policy 2071</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2014-07-08">२४ अषाढ
+                                                                २०७१, मङ्गलवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                        <div class="link text-right">
+                                            <a href="https://phsmc.gandaki.gov.np/list/acts-and-policy-rules">सबै
+                                                हेर्नुहोस् ।</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane fade " id="forms-and-formats" role="tabpanel"
+                                        aria-labelledby="forms-and-formats-tab">
+                                        <ul>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="https://phsmc.gandaki.gov.np/list/forms-and-formats/safath-grahan-form-for-health-personnel"
+                                                        class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a
+                                                    href="https://phsmc.gandaki.gov.np/list/forms-and-formats/safath-grahan-form-for-health-personnel">
+                                                    <p>Safath Grahan Form for Health Personnel</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2022-06-21">७ अषाढ
+                                                                २०७९, मङ्गलवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="https://phsmc.gandaki.gov.np/list/forms-and-formats/performance-evaluation-form-for-health-non-gazetted"
+                                                        class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a
+                                                    href="https://phsmc.gandaki.gov.np/list/forms-and-formats/performance-evaluation-form-for-health-non-gazetted">
+                                                    <p>Performance Evaluation Form for Health (Non-Gazetted)</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2021-06-23">९ अषाढ
+                                                                २०७८, बुधवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="https://phsmc.gandaki.gov.np/list/forms-and-formats/abnormal-leave-application-form"
+                                                        class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a
+                                                    href="https://phsmc.gandaki.gov.np/list/forms-and-formats/abnormal-leave-application-form">
+                                                    <p>Abnormal Leave Application Form</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2022-06-22">८ अषाढ
+                                                                २०७९, बुधवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="https://phsmc.gandaki.gov.np/list/forms-and-formats/leave-application-form"
+                                                        class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a
+                                                    href="https://phsmc.gandaki.gov.np/list/forms-and-formats/leave-application-form">
+                                                    <p>Leave Application Form</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2022-06-21">७ अषाढ
+                                                                २०७९, मङ्गलवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="tap-box-list">
+                                                <div class="list-icon-download">
+                                                    <a href="https://phsmc.gandaki.gov.np/list/forms-and-formats/promotion-application-form"
+                                                        class="dn-link download"><i
+                                                            class="fas fa-download icon"></i></a>
+                                                </div>
+                                                <a
+                                                    href="https://phsmc.gandaki.gov.np/list/forms-and-formats/promotion-application-form">
+                                                    <p>Promotion Application Form</p>
+                                                    <p>
+                                                        <small> प्रकाशित मिति:
+                                                            <span class="nepaliDate" englishdate="2022-06-23">९ अषाढ
+                                                                २०७९, बिहिवार</span>
+                                                        </small>
+                                                    </p>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                        <div class="link text-right">
+                                            <a href="https://phsmc.gandaki.gov.np/list/forms-and-formats">सबै हेर्नुहोस्
+                                                ।</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section_video">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 aos-init aos-animate" data-aos="zoom-in">
+                        <div class="card transparent no-border my-2">
+                            <div class="card-body p-2 text-center">
+                                <div class="view-header">
+                                    <a href="">
+                                        <h3 class="text-info">भिडियोहरु</h3>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md px-4">
+                                    <a href="#" class="text-info font-weight-bold text-center">
+                                        <div class="video">
+                                            <iframe width="100%" height="250px"
+                                                src="https://www.youtube.com/embed/TGPVqPNqvBM" frameborder="1"
+                                                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                                            टाइफाइड विरुद्धको खोप अभियान
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-2 section_quickboxes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mb-5 mt-5">
+                        <div class="container aos-init aos-animate" data-aos="zoom-in">
+                            <div class="row" id="quickbox">
+                                <div class="col-md-2 col-sm-3 box">
+                                    <a href="">
+                                        <i class="bi bi-file"></i>
+                                        <h4>डाउनलोड</h4>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 box">
+                                    <a href="">
+                                        <i class="bi bi-book"></i>
+                                        <h4>समाचार</h4>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 box">
+                                    <a href="">
+                                        <i class="bi bi-images"></i>
+                                        <h4>सूचना</h4>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 box">
+                                    <a href="">
+                                        <i class="bi bi-bullhorn"></i>
+                                        <h4>बोलपत्र</h4>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 box">
+                                    <a href="">
+                                        <i class="bi bi-database"></i>
+                                        <h4>प्रतिवेदन</h4>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 box">
+                                    <a href="">
+                                        <i class="fas fa-eye"></i>
+                                        <h4>ऐन तथा नीति नियमावली</h4>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 box">
+                                    <a href="">
+                                        <i class="fas fa-folder-open"></i>
+                                        <h4>निर्देशिका तथा सहयोगी पुस्तिकाहरु</h4>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 box">
+                                    <a href="">
+                                        <i class="fas fa-file-alt"></i>
+                                        <h4>फारम तथा ढाँचाहरु</h4>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 box">
+                                    <a href="">
+                                        <i class="far fa-file-archive"></i>
+                                        <h4>प्राविधिक स्पेसिफिकेशन बैंक</h4>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 box">
+                                    <a href="">
+
+                                        <h4>अन्य</h4>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 box">
+                                    <a href="">
+                                        <i class="fa fa-info"></i>
+                                        <h4>हाम्रो बारेमा</h4>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 box">
+                                    <a href="">
+                                        <i class="fas fa-images"></i>
+                                        <h4>फोटोहरु</h4>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 box">
+                                    <a href="">
+                                        <i class="fas fa-video"></i>
+                                        <h4>भिडियोहरु</h4>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 box">
+                                    <a href="">
+                                        <i class="fa fa-sitemap"></i>
+                                        <h4>संगठनात्मक संरचना</h4>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div data-aos="flip-up" class="aos-init aos-animate">
+            <footer id="footer" class="site-footer bg-light">
+                <div class="container">
+                    <div class="row seven-cols-grid footer-grid">
+                        <div class="col-12 col col-md-4">
+                            <div class="text-center"><span class="h4">महत्वपूर्ण लिंकहरु</span></div>
+                            <hr>
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs quick-links">
+                                <li class="nav-item" style="width:33.333333333333%">
+                                    <a class="nav-link active" data-toggle="tab" href="#province">प्रदेश तर्फ</a>
+                                </li>
+                                <li class="nav-item" style="width:33.333333333333%">
+                                    <a class="nav-link " data-toggle="tab" href="#federal">संघ तर्फ</a>
+                                </li>
+                                <li class="nav-item" style="width:33.333333333333%">
+                                    <a class="nav-link " data-toggle="tab" href="#other">अन्य</a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="province">
+                                    <ul class="list-group" style="height: 295px; overflow-y: scroll;">
+                                        <li class="list-group-item">
+                                            <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                            <a href="" target="_blank">मुख्यमन्त्री तथा
+                                                मन्त्रिपरिषद्को कार्यालय गण्डकी प्रदेश </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                            <a href="" target="_blank">स्वास्थ्य तथा जनसंख्या
+                                                मन्त्रालय, गण्डकी प्रदेश </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                            <a href="" target="_blank">स्वास्थ्य निर्देशनालय,
+                                                गण्डकी प्रदेश </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                            <a href="" target="_blank">प्रदेश जनस्वास्थ्य
+                                                प्रयोगशाला, गण्डकी प्रदेश </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                            <a href="" target="_blank">स्वास्थ्य तालिम
+                                                केन्द्र, गण्डकी प्रदेश </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="federal">
+                                    <ul class="list-group" style="height: 295px; overflow-y: scroll;">
+                                        <li class="list-group-item">
+                                            <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                            <a href="https://nepal.gov.np:8443/NationalPortal/NP?splashAction=home"
+                                                target="_blank">नेपाल सरकारको आधिकारिक पोर्टल </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                            <a href="https://mohp.gov.np/" target="_blank">स्वास्थ्य तथा जनसंख्या
+                                                मन्त्रालय </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                            <a href="http://climate.mohp.gov.np/" target="_blank">जलवायु परिवर्तन र
+                                                स्वास्थ्य </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                            <a href="http://nhrc.gov.np/" target="_blank">नेपाल स्वास्थ्य अनुसन्धान
+                                                परिषद् </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                            <a href="http://heoc.mohp.gov.np/" target="_blank">स्वास्थ्य आपातकालीन
+                                                परिचालन केन्द्र </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                            <a href="https://nhtc.gov.np/" target="_blank">राष्ट्रिय स्वास्थ्य प्रशिक्षण
+                                                केन्द्र टेकु, काठमाडौं </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                            <a href="https://dohs.gov.np/" target="_blank">स्वास्थ्य सेवा विभाग </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="other">
+                                    <ul class="list-group" style="height: 295px; overflow-y: scroll;">
+                                        <li class="list-group-item">
+                                            <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                            <a href="https://www.who.int/nepal" target="_blank">WHO नेपाल </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col col-md-5">
+                            <div class="text-center"><span class="h4">कार्यालय भएकाे स्थान</span>
+                                <div class="textwidget">
+                                    <hr>
+
+                                    <iframe class="enable-darkmode"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.767786874417!2d84.00506589999999!3d28.214366899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595e79d5f9bd9%3A0x8044b8ed92c62a67!2sProvince%20Health%20Logistic%20Management%20Center%2C%20Pokhara!5e0!3m2!1sen!2snp!4v1657216523545!5m2!1sen!2snp&quot;"
+                                        width="100%" height="315" frameborder="0" style="border:0"
+                                        allowfullscreen=""></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col col-md-3 aboutInfo">
+                            <div class="text-center"><span class="h4">सम्पर्क ठेगाना</span></div>
+                            <div class="textwidget">
+                                <hr>
+                                <p class="text-danger">
+                                    प्रदेश सरकार <br>
+
+                                    स्वास्थ्य तथा जनसंख्या मन्त्रालय <br>
+                                    <strong> प्रदेश स्वास्थ्य आपूर्ति व्यवस्थापन केन्द्र</strong><br>
+
+                                    गण्डकी प्रदेश, पोखरा नेपाल
+                                </p>
+                                <p> <em class="fa fa-phone-square"> </em> ०६१-५३६२५४ , ०६१-५३६२५५</p>
+                                <p><em class="fa fa-envelope"> </em> phlmcgandaki2076@gmail.com</p>
+                                <p><em class="fa fa-globe"> </em> https://phsmc.gandaki.gov.np</p>
+                                <!-- hitwebcounter Code START -->
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <section id="copyright" class="copyright">
+                <div class="container flex-box">
+                    <div class="mrg-right-auto">
+                        Developed By:<a target="_blank" href="http://www.vtechnepal.com">Virtual Technology Pvt.Ltd.</a>
+                        This Site Has been Visited
+                        <!-- Default Statcounter code for PHLMC Gandaki https://phsmc.gandaki.gov.np/
+-->
+                        <script type="text/javascript">
+                            var sc_project = 12775304;
+                            var sc_invisible = 0;
+                            var sc_security = "f4c55632";
+                            var scJsHost = "https://";
+                            document.write("<sc" + "ript type='text/javascript' src='" + scJsHost +
+                                "statcounter.com/counter/counter.js'></" + "script>");
+                        </script>
+                        <script type="text/javascript" src="https://statcounter.com/counter/counter.js"></script><span
+                            class="statcounter"><a id="sc_counter_12775304" class="statcounter"
+                                href="https://www.statcounter.com/" target="_blank"><img
+                                    src="https://c.statcounter.com/t.php?sc_project=12775304&amp;u1=247FF7573F7C4F11E22B469AE0AFA37C&amp;java=1&amp;security=f4c55632&amp;sc_snum=1&amp;sess=a8f3c4&amp;sc_rum_e_s=203&amp;sc_rum_e_e=364&amp;sc_rum_f_s=0&amp;sc_rum_f_e=192&amp;p=0&amp;pv=10&amp;rcat=r&amp;rdomo=127.0.0.1%3A5500&amp;rdomg=1&amp;jg=1&amp;rr=18.17.16.16.16.15.13.11.11&amp;resolution=1366&amp;h=768&amp;camefrom=https%3A//l.facebook.com/&amp;u=https%3A//phsmc.gandaki.gov.np/%3Ffbclid%3DIwAR2p4KuH4mgi1ODbU0xJsaZq00xFSfpqTsDfhlc3i5i1CInpA8WmECue8bM&amp;t=%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A6%E0%A5%87%E0%A4%B6%20%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A5%8D%E0%A4%AF%20%E0%A4%86%E0%A4%AA%E0%A5%82%E0%A4%B0%E0%A5%8D%E0%A4%A4%E0%A4%BF%20%E0%A4%B5%E0%A5%8D%E0%A4%AF%E0%A4%B5%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%BE%E0%A4%AA%E0%A4%A8%20%E0%A4%95%E0%A5%87%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%8D%E0%A4%B0&amp;sc_random=0.3639989152277143"
+                                    alt="StatCounter - Free Web Tracker and Counter" border="0" undefined=""></a></span>
+                        <noscript>
+                            <div class="statcounter"><a title="Web Analytics Made Easy -
+Statcounter" href="https://statcounter.com/" target="_blank"><img class="statcounter"
+                                        src="https://c.statcounter.com/12775304/0/f4c55632/0/"
+                                        alt="Web Analytics Made Easy - Statcounter"
+                                        referrerPolicy="no-referrer-when-downgrade"></a></div>
+                        </noscript>
+                        <!-- End of Statcounter Code -->
+                        Times
+                    </div>
+                    <div class="mrg-lef-auto">
+                        © Province Health Logistic Management Center 2022
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </body>
+
+</html>

@@ -1,0 +1,163 @@
+div ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: brown;
+}
+:root{
+    color-scheme: dark;
+}
+
+.currentNepaliDate{
+    color: red
+}
+/* .fa fa-phone{
+    color: darkblue;
+} */
+.officename{
+    color: red;
+    font-size: 18px;
+
+}
+.btn{
+    border-radius: 12px;
+    padding: 5px;
+    margin-top: 2%;
+    box-sizing: border-box;
+    color: blue;
+}
+.bn-label{
+  color: red;
+  left: -2;
+}
+.ptms_marquee a{
+    text-decoration: none;
+}
+.ptms_marquee a:hover{
+   background-color: red;
+   color: white;
+}
+.carousel-inner img{
+    width: 50%;
+    height: 500px;
+}
+.nav ul li a:hover{
+    background-color: red;
+    color: black;
+}
+.carousel-item active img{
+    width: 100%;
+}
+.nav-link{
+    margin-right: auto;
+}
+.style__item{
+    color: black;
+}
+.title_1{
+   color: orange
+}
+
+.video{
+    text-decoration: none;
+}
+.text{
+    text-decoration: none;
+    font-size: 24px;
+
+}
+#quickbox .box h4 {
+    padding: 34px 0;
+    font-size: 1.25rem;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.section_quickboxes {
+    background: url(../images/frontend/transparent-bg.png) #2b86b4;
+ 
+}
+
+.mt-2, .my-2 {
+    margin-top: 0.5rem!important;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+#quickbox .box a {
+    text-decoration: none;
+    color: #2b86b4;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+#quickbox .box {
+    text-align: center;
+    background-color: white;
+    color: #2b86b4;
+    border: 4px solid #2b86b4;
+    margin-bottom: 4px;
+    width: 100%;
+    display: inline-grid;
+    justify-content: center;
+    align-content: center;
+}
+.bi bi-file{
+    font-size: 89px;
+}
+.carousel-inner img{
+    width: 100%;
+    height: 90vh;
+}
+/* .col-md-8 d-none d-sm-block:hover{
+    bac
+} */
+.box:hover{
+    background-color: blue;
+    color: white;
+}
+.box{
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 12px;
+    /* padding: 5px; */
+
+}
+.box1{
+    cursor: pointer;
+}
+.bi bi-facebook-f {
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 400;
+}
+.b, c, d{
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}

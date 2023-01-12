@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+        <!-- Bootstrap Font Icon CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <body class="white-theme bg-hospital" data-aos-easing="ease" data-aos-duration="800" data-aos-delay="0">
+            <div class="scrollToTop"><i class="fa fa-angle-up"></i></div>
+            <div class="top-bar  p-1 bg-hospital">
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-md-8 d-none d-sm-block">
+                            <ul class="list-group list-group-horizontal-xl">
+                                <li class="language-switcher list-group-item box">
+                                    <a href="suggestion.html"><i class="bi bi-comments"></i> Feedback / Complain </a>
+                                </li>
+                                <li class="bandMode list-group-item box">
+
+                                    <a href="suggestion.html" style="display: -webkit-inline-box;"><i
+                                            class="bi bi-spinner"></i> Low Bandwidth</a>
+
+                                </li>
+                                <li class="themeMode list-group-item box">
+                                    <a href="screenreader.html"><i class="fa fa-wheelchair"></i> Screen Readers </a>
+                                </li>
+                                <li class="list-group-item d-none d-sm-block">
+                                    <i class="bi bi-phone" aria-hidden="true"></i> 061-536254, 061-536255
+                                </li>
+                                <li class="list-group-item d-none d-sm-block">
+                                    <i class="bi bi-calendar"></i>
+                                    <span class="currentEnglishDate">23 Bhadra 2079, Thursday</span>
+                                    <p></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 ">
+                            <ul class="list-group list-group-horizontal-xl float-right">
+
+                                <li class="language-switcher list-group-item box">
+                                    <a href="nepali.html" style="display: -webkit-inline-box;"><i
+                                            class="bi bi-language"></i>
+                                        <div class="d-none d-md-block"> &nbsp; नेपली</div>
+                                    </a>
+                                </li>
+                                <li class="themeMode list-group-item box">
+                                    <a href="screenreader.html" style="display: -webkit-inline-box;"><i class="bi bi-moon"
+                                            aria-hidden="true"></i>
+                                        <div class="d-none d-md-block"> &nbsp; Dark</div>
+                                    </a>
+
+                                </li>
+                                <li class="list-group-item fontResizer box">
+                                    <span onclick="fontchangeplus()">
+                                        A+
+                                    </span>
+
+                                    <span onclick="fontchangenormal()">
+                                        A
+                                    </span>
+
+                                    <span onclick="fontchangeminus()">
+                                        A-
+                                    </span>
+                                </li>
+
+                                <li class="list-group-item box">
+                                    <a target="_blank" href=""><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="list-group-item box">
+                                    <a target="_blank" href=""><i class="bi bi-twitter" aria-hidden="true"></i></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">अगाडि आउनुहोस्</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href=""> हाम्रो बारेमा</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"> सूचना</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> समाचार</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> प्रकाशन</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> डाउनलोड</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> मिडिया</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">बारम्बार सोधिने प्रश्नहरु</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html"> सम्पर्क</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header bg-hospital container-flued" style="padding-bottom:1px;">
+                <div class="container aos-init aos-animate" data-aos="flip-down">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <center>
+                                <a href=""><img src="https://phsmc.gandaki.gov.np/images/site-config/nepal-logo.png"
+                                        class="img-fluid img-logo" style="padding-top:16px; width: 125px;"></a>
+                            </center>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="custom-name" style="text-align:center;">
+                                <p class="govname" style="line-height:25px; margin:0;padding:0; font-size: 18px;">
+                                    Provincial Government<br>
+                                    Ministry of Health and Population <br>
+                                </p>
+                                <h1 class="officename"
+                                    style="font-size:28px; margin:0px; line-height:40px; padding:0px">Province Health
+                                    Logistic Management Center</h1>
+                                <p class="addressname" style="line-height:22px;margin:0;padding:0;font-size: 16px">
+                                    Gandaki Province, Pokhara, Nepal
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex justify-content-center ">
+
+
+                            <img src="https://phsmc.gandaki.gov.np/images/logo/nepaliflag.gif"
+                                class="national-flag float-right d-none d-sm-block" style="width:90px; height:120px">
+                        </div>
+                    </div>
+                </div>
+
+
+                <header class="header-last aos-init aos-animate" data-aos="flip-down">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <nav class="navbar navbar-expand-sm navbar-dark">
+                                    <button class="navbar-toggler navbar-toggler-right" type="button"
+                                        data-toggle="collapse" data-target="#navb">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+
+                                    <div class="collapse navbar-collapse" id="navb">
+                                        <ul class="navbar-nav mr-auto">
+
+
+
+                                            <li class="active nav-item">
+                                                <a class="nav-link" href="">
+                                                    <i class="bi bi-home"></i>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    About Us <span class="caret"></span>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <a class="dropdown-item"
+                                                        href="">
+                                                        Background
+                                                    </a>
+
+                                                    <a class="dropdown-item"
+                                                        href="">
+                                                        Message from the Director
+                                                    </a>
+
+                                                    <a class="dropdown-item" href="">
+                                                        Staffs Details
+                                                    </a>
+
+                                                    <a class="dropdown-item"
+                                                        href="">
+                                                        Work Details
+                                                    </a>
+
+                                                    <a class="dropdown-item"
+                                                        href="">
+                                                        Citizen Charter
+                                                    </a>
+
+                                                    <a class="dropdown-item"
+                                                        href="">
+                                                        organizational Structure
+                                                    </a>
+
+                                                </div>
+                                            </li>
+
+                                            <li class=" nav-item">
+                                                <a class="nav-link"
+                                                    href="">
+                                                    Information
+                                                </a>
+                                            </li>
+
+                                            <li class=" nav-item">
+                                                <a class="nav-link" href="">
+                                                    News
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    Publications <span class="caret"></span>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <a class="dropdown-item"
+                                                        href="">
+                                                        Report
+                                                    </a>
+
+                                                    <a class="dropdown-item"
+                                                        href="">
+                                                        Acts and Policy Rules
+                                                    </a>
+
+                                                    <a class="dropdown-item"
+                                                        href="">
+                                                        Directory and Helping Manual Book
+                                                    </a>
+
+                                                    <a class="dropdown-item"
+                                                        href="">
+                                                        Forms and formats
+                                                    </a>
+
+                                                    <a class="dropdown-item"
+                                                        href="">
+                                                        Technical Specification Bank
+                                                    </a>
+
+                                                </div>
+                                            </li>
+
+                                            <li class=" nav-item">
+                                                <a class="nav-link" href="">
+                                                    Download
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    Media <span class="caret"></span>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <a class="dropdown-item" href="">
+                                                        Albums
+                                                    </a>
+
+                                                    <a class="dropdown-item" href="https://phsmc.gandaki.gov.np/videos">
+                                                        videos
+                                                    </a>
+
+                                                </div>
+                                            </li>
+
+                                            <li class=" nav-item">
+                                                <a class="nav-link" href="">
+                                                    FAQs
+                                                </a>
+                                            </li>
+
+                                            <li class=" nav-item">
+                                                <a class="nav-link" href="">
+                                                    Contact
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+            </div>
+            <div class="body-content aos-init aos-animate" data-aos="zoom-in">
+                <div class="container">
+                    <div class="row">
+                        <div class="col aos-init aos-animate" data-aos="zoom-in">
+                            <div class="breaking-news-ticker newsticker" id="post-title-marquee-scroll">
+                                <div class="bn-label">Highlights</div>
+                                <div class="ptms_marquee">
+                                    <marquee scrollamount="5" scrolldelay="7" direction="left" onmouseover="this.stop()"
+                                        onmouseout="this.start()">
+                                        <p style="font-size:1.125rem;"><a
+                                                href="">स्थानीय
+                                                तहमा वार्षिक योजना तथा बजेट तर्जुमा सम्बन्धी मार्गदर्सन</a> || <a
+                                                href="">Promotion
+                                                Application Form</a> || <a
+                                                href="">Abnormal
+                                                Leave Application Form</a> || <a
+                                                href="">Health
+                                                Sector Strategy in Nepali</a> || <a
+                                                href="">स्वास्थ्य
+                                                संस्था स्थापना, संचालन तथा स्तरोन्नती मापदण्ड सम्वन्धि (दोश्रो संशोधन)
+                                                निर्देशिका, २०७३</a> || </p>
+                                    </marquee>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="section_slider">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9">
+
+                                <div id="demo" class="carousel slide py-2" data-ride="carousel">
+                                    <ul class="carousel-indicators active">
+
+                                        <li data-target="#demo" data-slide-to="1" class=""></li>
+                                        <li data-target="#demo" data-slide-to="2" class=""></li>
+                                        <li data-target="#demo" data-slide-to="3" class="active"></li>
+                                        <li data-target="#demo" data-slide-to="4" class=""></li>
+                                        <li data-target="#demo" data-slide-to="5" class=""></li>
+                                        <li data-target="#demo" data-slide-to="6" class=""></li>
+                                        <li data-target="#demo" data-slide-to="7" class=""></li>
+                                        <li data-target="#demo" data-slide-to="8" class=""></li>
+                                        <li data-target="#demo" data-slide-to="9" class=""></li>
+                                        <li data-target="#demo" data-slide-to="10" class=""></li>
+                                        <li data-target="#demo" data-slide-to="11" class=""></li>
+                                    </ul>
+                                    <div class="carousel-inner">
+
+                                        <div class="carousel-item">
+                                            <img src=""
+                                                alt="" width="100%" height="563"
+                                                style="border-radius:15px; object-fit: cover;">
+                                            <div class="carousel-caption" style="background:#0000004d;">
+                                                <h4 class="animated fadeInUp text-white">Opening Ceremony of Biomedical
+                                                    Unit</h4>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://phsmc.gandaki.gov.np/images/sliders/16572183768662_slider2.jpeg"
+                                                alt="" width="100%" height="563"
+                                                style="border-radius:15px; object-fit: cover;">
+                                            <div class="carousel-caption" style="background:#0000004d;">
+                                                <h4 class="animated fadeInUp text-white">प्रदेश स्वास्थ्य आपूर्ति
+                                                    व्यवस्थापन केन्द्रका निर्देशक ज्यु बाट स्वास्थ्य कार्यालय मनाङ को
+                                                    निरीक्षण</h4>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item active">
+                                            <img src="https://phsmc.gandaki.gov.np/images/sliders/16572183156695_slider1.jpeg"
+                                                alt="" width="100%" height="563"
+                                                style="border-radius:15px; object-fit: cover;">
+                                            <div class="carousel-caption" style="background:#0000004d;">
+                                                <h4 class="animated fadeInUp text-white">प्रदेशिक वायोमेडिकल व्यवस्थापन
+                                                    इकाइ सन्चालन गर्नका लागि Nick Simons Institute सँग सम्झौता</h4>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item ">
+                                            <img src="https://phsmc.gandaki.gov.np/images/sliders/16572184534220_slider3.jpeg"
+                                                alt="" width="100%" height="563"
+                                                style="border-radius:15px; object-fit: cover;">
+                                            <div class="carousel-caption" style="background:#0000004d;">
+                                                <h4 class="animated fadeInUp text-white">दमौली अस्पताल , तनहुँलाई
+                                                    कीटजन्य रोग परिक्षण गर्नका लागि चाहिने कीट eLMIS प्रणाली बाट
+                                                    हस्तान्तरण</h4>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item ">
+                                            <img src="https://phsmc.gandaki.gov.np/images/sliders/16572189858192_slider10.jpeg"
+                                                alt="" width="100%" height="563"
+                                                style="border-radius:15px; object-fit: cover;">
+                                            <div class="carousel-caption" style="background:#0000004d;">
+                                                <h4 class="animated fadeInUp text-white">आ व २०७७/२०७८ मा सम्पादित
+                                                    स्वास्थ्य कार्यक्रमहरुको वार्षिक समीक्षा कार्यक्रम</h4>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item ">
+                                            <img src="https://phsmc.gandaki.gov.np/images/sliders/16572184846447_slider4.jpeg"
+                                                alt="" width="100%" height="563"
+                                                style="border-radius:15px; object-fit: cover;">
+                                            <div class="carousel-caption" style="background:#0000004d;">
+                                                <h4 class="animated fadeInUp text-white">बयोमेडिकल वर्कशप सुदढीकरण
+                                                    सम्वन्धमा Nick Simon Institute सँग समन्वयात्मक छलफल</h4>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item ">
+                                            <img src="https://phsmc.gandaki.gov.np/images/sliders/16572186015009_slider5.jpeg"
+                                                alt="" width="100%" height="563"
+                                                style="border-radius:15px; object-fit: cover;">
+                                            <div class="carousel-caption" style="background:#0000004d;">
+                                                <h4 class="animated fadeInUp text-white">यस केन्द्रबाट खरिद गरी पोखरा
+                                                    स्वास्थ्य बिज्ञान प्रतिस्ठानलाई हस्तान्तरण</h4>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item ">
+                                            <img src="https://phsmc.gandaki.gov.np/images/sliders/16572186396193_slider6.jpeg"
+                                                alt="" width="100%" height="563"
+                                                style="border-radius:15px; object-fit: cover;">
+                                            <div class="carousel-caption" style="background:#0000004d;">
+                                                <h4 class="animated fadeInUp text-white">Popular Chinese Actor Jackie
+                                                    Chan donated 6 laks pieces masks to Gandaki Province Government</h4>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item ">
+                                            <img src="https://phsmc.gandaki.gov.np/images/sliders/16572186705448_slider7.jpeg"
+                                                alt="" width="100%" height="563"
+                                                style="border-radius:15px; object-fit: cover;">
+                                            <div class="carousel-caption" style="background:#0000004d;">
+                                                <h4 class="animated fadeInUp text-white">Popular Chinese Actor Jackie
+                                                    Chan donated 6 laks pieces masks to Gandaki Province Government</h4>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item ">
+                                            <img src="https://phsmc.gandaki.gov.np/images/sliders/16572186986750_slider8.jpeg"
+                                                alt="" width="100%" height="563"
+                                                style="border-radius:15px; object-fit: cover;">
+                                            <div class="carousel-caption" style="background:#0000004d;">
+                                                <h4 class="animated fadeInUp text-white">आ व २०७७/२०७८ मा सम्पादित
+                                                    स्वास्थ्य कार्यक्रमहरुको वार्षिक समीक्षा कार्यक्रम</h4>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item ">
+                                            <img src="https://phsmc.gandaki.gov.np/images/sliders/16572189459899_slider9.jpeg"
+                                                alt="" width="100%" height="563"
+                                                style="border-radius:15px; object-fit: cover;">
+                                            <div class="carousel-caption" style="background:#0000004d;">
+                                                <h4 class="animated fadeInUp text-white">कदर पत्र</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="staff-desk wow fadeInRight  animated" data-wow-duration="2s"
+                                    data-wow-delay="0.2s"
+                                    style="visibility: visible; animation-duration: 2s; animation-delay: 0.2s; animation-name: fadeInRight;">
+                                    <span class="field-content">
+                                        <div class="staff-photo">
+
+                                            <img typeof="foaf:Image"
+                                                src="https://scontent.fpkr1-1.fna.fbcdn.net/v/t39.30808-1/242694411_3054062701516490_7869530196765367285_n.jpg?stp=dst-jpg_s200x200&_nc_cat=101&ccb=1-7&_nc_sid=7206a8&_nc_ohc=2-yE8CEfUMUAX9I0ekb&_nc_ht=scontent.fpkr1-1.fna&oh=00_AT-xD0mjNjA4CdnKhZQqWx6eYE2qyTHCRLkri34N8zZ_Qg&oe=631DADE7"
+                                                width="138" height="140" alt="">
+                                        </div>
+
+                                        <div class="staff-info">
+                                            <h2>Shiva poudel</h2>
+                                            <p class="staff-name">Director</p>
+
+                                            <a href=""><button class="btn btn-info">All Details</button></a>
+
+                                        </div>
+                                    </span>
+                                </div>
+                                <div class="staff-desk wow fadeInRight  animated" data-wow-duration="2s"
+                                    data-wow-delay="0.2s"
+                                    style="visibility: visible; animation-duration: 2s; animation-delay: 0.2s; animation-name: fadeInRight;">
+                                    <span class="field-content">
+                                        <div class="staff-photo">
+
+                                            <img typeof=" https://scontent.fpkr1-1.fna.fbcdn.net/v/t39.30808-1/242694411_3054062701516490_7869530196765367285_n.jpg?stp=dst-jpg_s200x200&_nc_cat=101&ccb=1-7&_nc_sid=7206a8&_nc_ohc=2-yE8CEfUMUAX9I0ekb&_nc_ht=scontent.fpkr1-1.fna&oh=00_AT-xD0mjNjA4CdnKhZQqWx6eYE2qyTHCRLkri34N8zZ_Qg&oe=631DADE7"
+                                                width="138" height="140" alt="">
+                                        </div>
+
+                                        <div class="staff-info">
+                                            <h2>Ganesh subedi</h2>
+                                            <p class="staff-name">Information Officer</p>
+
+                                            <a href=""><button class="btn btn-info">All Details</button></a>
+
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section_about_us p-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 aos-init" data-aos="zoom-in">
+                                <div class="about-us-sec wow fadeInLeft  animated mt-3" data-wow-duration="2s"
+                                    data-wow-delay="0.2s"
+                                    style="visibility: visible; animation-duration: 2s; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                    <h1>ABOUT <span> US</span></h1>
+                                    <div style="max-height:205px; overflow:hidden;">
+                                        <p>प्रदेश स्वास्थ्य आपूर्ति व्यवस्थापन केन्द्र, गण्डकी प्रदेश यस प्रदेशमा
+                                            स्वास्थ्य आपूर्तिको प्रमुख प्राविधिक र प्रशासनिक इकाई हो। यस केन्द्रले
+                                            प्रदेशमा स्वास्थ्यसंग सम्बन्धित आपूर्तिको उचित व्यवस्थापन सुनिश्चित गर्दछ ।
+                                        </p>
+
+                                        <p>यस कार्यालयको मुख्य जिम्मेवारी निम्न अनुसारको कार्यहरु संचालन गर्ने/गराउने
+                                            रहेको छ:</p>
+
+                                        <p>आपूर्ति श्रृखला व्यवस्थापन सम्बन्धमा भएका सुधारका कार्य तथा प्रदेश स्तरमा
+                                            अत्यावश्यक औषधीहरु एवं सबै किसिमका स्वास्थ्य सामाग्री प्रवाहको पुनरावलोकन
+                                            एवं आवश्यक प्रक्षेपण तथा सिफारिस साथै चौमासिक तथा वार्षिक समीक्षा बैठकको
+                                            आयोजना गर्ने ।</p>
+
+                                        <p>आपूर्ति श्रृखला व्यवस्थापनसँग सम्बन्धित वार्षिक योजना, तर्जुमा गर्नुका साथै
+                                            अत्यावश्यक औषधिहरु एवं सबै किसिमका स्वास्थ्य सामग्रीहरु औजार उपकरणकोको खरिद,
+                                            भण्डारण, वितरण र ढुवानी चुस्त-दुरुस्त राख्ने ।</p>
+
+                                        <p>आवश्यकता अनुसार विद्दुतीय आपूर्ति श्रृखला व्यवस्थापन सूचना प्रणालीलाई
+                                            पुनरावलोकन गरी अद्धावधिक गर्ने तथा आपुर्ति श्रृखला व्यवस्थापन प्रणालीमा
+                                            आईपर्ने गम्भीर समस्या जस्तै सामग्रीको शून्य मौज्दात, अत्याधिक मौज्दात,
+                                            वितरणमा असन्तुलन हुन नदिन आवश्यक कार्य गर्ने ।</p>
+
+                                        <p>आपूर्ति श्रृखला व्यवस्थापनका लागि आवश्यक जनशक्ति विकासका साथै कार्यस्थलमा
+                                            सिकाई अभ्यासका निम्ती सहयोग गर्नुका साथै आपूर्ति श्रृखलालाई समय सापेक्ष
+                                            बनाउन आवश्यक पर्ने जनशक्ति एवं सो को निरन्तर विकास, आवश्यक ज्ञान, सीप र
+                                            दक्षताको पहिचान गरी प्रतिष्पर्धी र क्षमतायुक्त बनाउने ।</p>
+
+                                        <p>आपूर्ति श्रृखला व्यवस्थापन विविध पक्षमा प्राविधिक दक्षता हासिल गर्न सम्बन्धित
+                                            निर्देशिका वा मापदण्ड अनुसार कर्मचारीको कार्यविवरण, कार्य मापदण्ड एवं
+                                            स्तरीकरण, सस्थागत तालिम, अनसाइट कोचिङ्ग मेन्टरिङ्ग लगायत प्राविधिक
+                                            विशेषज्ञता प्रदान गर्ने ।</p>
+
+                                        <p>अत्यावश्यक औषधिहरु एवं स्वास्थ्य सामग्रीहरुको आपूर्ति श्रृंखला सुधारका लागि
+                                            सराेकारवालाहरुको सुझावका आधारमा र्काय गर्नुका साथै विकास साझेदारहरुसँग आपसी
+                                            सहयोग र समन्वय गर्ने ।</p>
+
+                                        <p>आपूर्ति श्रृखला व्यवस्थापनमा सुधार ल्याउनका लागि नविनतम कार्यको पहिचान र
+                                            अवलम्बन गर्नु/ गराउनुका साथै कुशल अभ्यास एवं प्रक्रिया बसाउन सहकार्य गर्ने ।
+                                        </p>
+
+                                        <p>आपूर्ति श्रृखलासँग जोडिएका सफलताका कथा, सिकाइ उपलब्धिहरु पहिचान गरी व्यवहारमा
+                                            लागु गर्ने ।</p>
+
+                                        <p>आपूर्ति श्रृखंला व्यवस्थापनमा भएका कमी कमजोरीहरुको लेखाजोखा एवं मुल्याङ्कन
+                                            गरी सुधारका लागि आवश्यक कार्य गर्नुका साथै सम्बन्धीत नीति, रणनीति एवं
+                                            निर्देशिकाको पुनरावलोकन गरी सुधारका लागि आवश्यक कार्य गर्ने ।</p>
+
+                                        <p>&nbsp;स्वास्थ्य तथा जनसंख्या मन्त्रालय, गण्डकी प्रदेश मातहत रही प्रदेशमा
+                                            स्वास्थ्यसंग सम्बन्धित आपूर्तिको उचित व्यवस्थापन सुनिश्चित गर्दछ ।</p>
+                                    </div>
+                                    <div class="view-footer"><a href=""
+                                            title="Read More">View All</a></div> <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section_news p-1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 aos-init" data-aos="zoom-in">
+                                <div class="nav-tabs-navigation shadow tap-box">
+                                    <div class="nav-tabs-wrapper">
+                                        <ul class="nav nav-tabs text-white" style="background-color: #006b96;"
+                                            id="myTab" role="tablist">
+                                            <li class="nav-item" style="width:33.333333333333%; text-align:center;">
+                                                <a class="nav-link active" id="news-tab" data-toggle="tab" href="#news"
+                                                    role="tab" aria-controls="news" aria-selected="true"> <i
+                                                        class="bi bi-book"></i> News</a>
+                                            </li>
+                                            <li class="nav-item" style="width:33.333333333333%; text-align:center;">
+                                                <a class="nav-link " id="information-tab" data-toggle="tab"
+                                                    href="#information" role="tab" aria-controls="information"
+                                                    aria-selected="true"> <i class="far fa-images"></i> Information</a>
+                                            </li>
+                                            <li class="nav-item" style="width:33.333333333333%; text-align:center;">
+                                                <a class="nav-link " id="tender-tab" data-toggle="tab" href="#tender"
+                                                    role="tab" aria-controls="tender" aria-selected="true"> <i
+                                                        class="bi bi-bullhorn"></i> Tender</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade active show" id="news" role="tabpanel"
+                                                aria-labelledby="news-tab">
+                                                <ul>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="bi bi-download icon"></i></a>
+                                                        </div>
+                                                        <a
+                                                            href="">
+                                                            <p>निर्माणाधिन कार्यालय भवन</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2022-01-30
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="fas fa-download icon"></i></a>
+                                                        </div>
+                                                        <a
+                                                            href="">
+                                                            <p>औषधि तथा स्वास्थ्य सामग्रीको उचित भण्डारण सम्बन्धी
+                                                                मार्गनिर्देशनहरु</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2022-01-24
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="fas fa-download icon"></i></a>
+                                                        </div>
+                                                        <a
+                                                            href="">
+                                                            <p>कोभिड-१९ विरुद्धको खोप वितरण गरिएको परिमाण (डोजमा)</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2022-01-24
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="bi bi- icon"></i></a>
+                                                        </div>
+                                                        <a
+                                                            href="">
+                                                            <p>आ.व. २०७८/७९ मा यस केन्द्रबाट जिल्लाहरुमा वितरण गरिएका
+                                                                नियमित खोपको परिमाण</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2022-01-24
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="fas fa-download icon"></i></a>
+                                                        </div>
+                                                        <a
+                                                            href="">
+                                                            <p>कोभिड-१९ विरुद्धको खोप स्वास्थ्य कार्यालय पर्वतमा पठाउँदै
+                                                                ।</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2022-01-16
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                                <div class="link text-right">
+                                                    <a href="">View All</a>
+                                                </div>
+
+                                            </div>
+                                            <div class="tab-pane fade " id="information" role="tabpanel"
+                                                aria-labelledby="information-tab">
+                                                <ul>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="fas fa-download icon"></i></a>
+                                                        </div>
+                                                        <a href="">
+                                                            <p>स्वास्थ्य आपूर्ति व्यवस्थापन सम्बन्धी सामान्य जानकारी</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2020-01-06
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="fas fa-download icon"></i></a>
+                                                        </div>
+                                                        <a
+                                                            href="">
+                                                            <p>आर्थिक वर्ष २०७७/७८ मा प्रदेश स्वास्थ्य आपूर्ति
+                                                                व्यवस्थापन केन्द्रबाट सम्पन्न कार्यक्रमहरूको वार्षिक
+                                                                प्रतिवेदन</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2022-01-06
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="fas fa-download icon"></i></a>
+                                                        </div>
+                                                        <a
+                                                            href="">
+                                                            <p>आधारभुत स्वास्थ्य सेवाका औषधी तथा औषधीजन्य सामाग्रीहरुको
+                                                                खरिद बर्गिकरण</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2022-05-18
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="fas fa-download icon"></i></a>
+                                                        </div>
+                                                        <a
+                                                            href="">
+                                                            <p>आक्सिटोसिन आपूर्ति व्यवस्थापन सम्बन्धमा</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2022-06-13
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+                                            <div class="tab-pane fade " id="tender" role="tabpanel"
+                                                aria-labelledby="tender-tab">
+                                                <ul>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="fas fa-download icon"></i></a>
+                                                        </div>
+                                                        <a
+                                                            href="">
+                                                            <p>Invitation for electronic Bids</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2022-03-08
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 aos-init" data-aos="zoom-in">
+                                <div class="nav-tabs-navigation shadow tap-box">
+                                    <div class="nav-tabs-wrapper">
+                                        <ul class="nav nav-tabs text-white" style="background-color: #006b96;"
+                                            id="myTab" role="tablist">
+                                            <li class="nav-item" style="width:33.333333333333%; text-align:center;">
+                                                <a class="nav-link active" id="report-tab" data-toggle="tab"
+                                                    href="#report" role="tab" aria-controls="report"
+                                                    aria-selected="true"> <i class="fas fa-database"></i> Report</a>
+                                            </li>
+                                            <li class="nav-item" style="width:33.333333333333%; text-align:center;">
+                                                <a class="nav-link " id="acts-and-policy-rules-tab" data-toggle="tab"
+                                                    href="#acts-and-policy-rules" role="tab"
+                                                    aria-controls="acts-and-policy-rules" aria-selected="true"> <i
+                                                        class="fas fa-eye"></i> Acts and Policy Rules</a>
+                                            </li>
+                                            <li class="nav-item" style="width:33.333333333333%; text-align:center;">
+                                                <a class="nav-link " id="forms-and-formats-tab" data-toggle="tab"
+                                                    href="#forms-and-formats" role="tab"
+                                                    aria-controls="forms-and-formats" aria-selected="true"> <i
+                                                        class="fas fa-file-alt"></i> Forms and formats</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade active show" id="report" role="tabpanel"
+                                                aria-labelledby="report-tab">
+                                                <ul>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="fas fa-download icon"></i></a>
+                                                        </div>
+                                                        <a
+                                                            href="">
+                                                            <p>PHLMC_Annual-Report-2077-78</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2021-09-23
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="bi bi-download icon"></i></a>
+                                                        </div>
+                                                        <a
+                                                            href="">
+                                                            <p>सुचनाको हक सम्बन्धी ऐन बमोजिम तयार गरिएको (श्रवण देखी
+                                                                असोज मसान्त सम्म)</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2021-07-16
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="fas fa-download icon"></i></a>
+                                                        </div>
+                                                        <a
+                                                            href="">
+                                                            <p>वार्षिक खरिद योजना २०७८/७९</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2021-06-15
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="fas fa-download icon"></i></a>
+                                                        </div>
+                                                        <a
+                                                            href="">
+                                                            <p>सुचनाको हक सम्बन्धी ऐन बमोजिम तयार गरिएको (कार्तिक १ देखी
+                                                                पौष मसान्त सम्म)</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2021-10-18
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="fas fa-download icon"></i></a>
+                                                        </div>
+                                                        <a href="">
+                                                            <p>सुचनाको हक सम्बन्धी ऐन बमोजिम तयार गरिएको (माघ १ देखी
+                                                                चैत्र मसान्त सम्म)</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2022-01-15
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                                <div class="link text-right">
+                                                    <a href="">View All</a>
+                                                </div>
+
+                                            </div>
+                                            <div class="tab-pane fade " id="acts-and-policy-rules" role="tabpanel"
+                                                aria-labelledby="acts-and-policy-rules-tab">
+                                                <ul>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="fas fa-download icon"></i></a>
+                                                        </div>
+                                                        <a
+                                                            href="">
+                                                            <p>स्वास्थ्य संस्था स्थापना, संचालन तथा स्तरोन्नती मापदण्ड
+                                                                सम्वन्धि (दोश्रो संशोधन) निर्देशिका, २०७३</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2022-06-22
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="fas fa-download icon"></i></a>
+                                                        </div>
+                                                        <a
+                                                            href="">
+                                                            <p>Health Sector Strategy</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2022-06-15
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="fas fa-download icon"></i></a>
+                                                        </div>
+                                                        <a
+                                                            href="">
+                                                            <p>Health Sector Strategy in Nepali</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2022-06-22
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="fas fa-download icon"></i></a>
+                                                        </div>
+                                                        <a
+                                                            href="">
+                                                            <p>Gender Equity and Social Inclusion Strategy</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2022-06-21
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="fas fa-download icon"></i></a>
+                                                        </div>
+                                                        <a
+                                                            href="">
+                                                            <p>National Health Policy 2071</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2014-07-08
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                                <div class="link text-right">
+                                                    <a href="">View
+                                                        All</a>
+                                                </div>
+
+                                            </div>
+                                            <div class="tab-pane fade " id="forms-and-formats" role="tabpanel"
+                                                aria-labelledby="forms-and-formats-tab">
+                                                <ul>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="fas fa-download icon"></i></a>
+                                                        </div>
+                                                        <a
+                                                            href="">
+                                                            <p>Safath Grahan Form for Health Personnel</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2022-06-21
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="fas fa-download icon"></i></a>
+                                                        </div>
+                                                        <a
+                                                            href="">
+                                                            <p>Performance Evaluation Form for Health (Non-Gazetted)</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2021-06-23
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="fas fa-download icon"></i></a>
+                                                        </div>
+                                                        <a
+                                                            href="">
+                                                            <p>Abnormal Leave Application Form</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2022-06-22
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="fas fa-download icon"></i></a>
+                                                        </div>
+                                                        <a
+                                                            href="">
+                                                            <p>Leave Application Form</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2022-06-21
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="tap-box-list">
+                                                        <div class="list-icon-download">
+                                                            <a href=""
+                                                                class="dn-link download"><i
+                                                                    class="fas fa-download icon"></i></a>
+                                                        </div>
+                                                        <a
+                                                            href="">
+                                                            <p>Promotion Application Form</p>
+                                                            <p>
+                                                                <small> Published Date:
+                                                                    2022-06-23
+                                                                </small>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                                <div class="link text-right">
+                                                    <a href="">View
+                                                        All</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+                <section class="section_video">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 aos-init" data-aos="zoom-in">
+                                <div class="card transparent no-border my-2">
+                                    <div class="card-body p-2 text-center">
+                                        <div class="view-header">
+                                            <a href="">
+                                                <h3 class="text-info">Videos</h3>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md px-4">
+                                            <a href="#" class="text-info font-weight-bold text-center">
+                                                <div class="video">
+                                                    <iframe width="100%" height="250px"
+                                                        src="https://www.youtube.com/embed/TGPVqPNqvBM" frameborder="1"
+                                                        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                                                    टाइफाइड विरुद्धको खोप अभियान
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="mt-2 section_quickboxes">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 mb-5 mt-5">
+                                <div class="container aos-init" data-aos="zoom-in">
+                                    <div class="row" id="quickbox">
+                                        <div class="col-md-2 col-sm-3 box">
+                                            <a href="">
+                                                <i class="fa fa-file"></i>
+                                                <h4>Download</h4>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 box">
+                                            <a href="">
+                                                <i class="fas fa-book"></i>
+                                                <h4>News</h4>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 box">
+                                            <a href="">
+                                                <i class="far fa-images"></i>
+                                                <h4>Information</h4>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 box">
+                                            <a href="">
+                                                <i class="fas fa-bullhorn"></i>
+                                                <h4>Tender</h4>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 box">
+                                            <a href="">
+                                                <i class="fas fa-database"></i>
+                                                <h4>Report</h4>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 box">
+                                            <a href="">
+                                                <i class="fas fa-eye"></i>
+                                                <h4>Acts and Policy Rules</h4>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 box">
+                                            <a href="h">
+                                                <i class="fas fa-folder-open"></i>
+                                                <h4>Directory and Helping Manual Book</h4>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 box">
+                                            <a href="">
+                                                <i class="fas fa-file-alt"></i>
+                                                <h4>Forms and formats</h4>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 box">
+                                            <a href="">
+                                                <i class="far fa-file-archive"></i>
+                                                <h4>Technical Specification Bank</h4>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 box">
+                                            <a href="">
+
+                                                <h4>Others</h4>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 box">
+                                            <a href="">
+                                                <i class="fa fa-info"></i>
+                                                <h4>About Us</h4>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 box">
+                                            <a href="">
+                                                <i class="fas fa-images"></i>
+                                                <h4>Gallery</h4>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 box">
+                                            <a href="">
+                                                <i class="fas fa-video"></i>
+                                                <h4>Vidoes</h4>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 box">
+                                            <a href="">
+                                                <i class="fa fa-sitemap"></i>
+                                                <h4>Organogram</h4>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div data-aos="flip-up" class="aos-init">
+                <footer id="footer" class="site-footer bg-light">
+                    <div class="container">
+                        <div class="row seven-cols-grid footer-grid">
+                            <div class="col-12 col col-md-4">
+                                <div class="text-center"><span class="h4">Important Links</span></div>
+                                <hr>
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs quick-links">
+                                    <li class="nav-item" style="width:33.333333333333%">
+                                        <a class="nav-link active" data-toggle="tab" href="#province">Provincial</a>
+                                    </li>
+                                    <li class="nav-item" style="width:33.333333333333%">
+                                        <a class="nav-link " data-toggle="tab" href="#federal">Federal</a>
+                                    </li>
+                                    <li class="nav-item" style="width:33.333333333333%">
+                                        <a class="nav-link " data-toggle="tab" href="#other">Other</a>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="province">
+                                        <ul class="list-group" style="height: 295px; overflow-y: scroll;">
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="https://ocmcm.gandaki.gov.np/" target="_blank">Office of the
+                                                    Chief Minister and Council of Ministers Gandaki Province </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="http://mohp.gandaki.gov.np/" target="_blank">Ministry of Health
+                                                    and Population Gandaki Province </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="https://hd.gandaki.gov.np/" target="_blank">Health Directorate
+                                                    Gandaki Province </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="https://pphl.gandaki.gov.np/" target="_blank">Province Public
+                                                    Health Laboratory, Gandaki Province </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="https://htc.gandaki.gov.np/" target="_blank">Health Training
+                                                    Center, Gandaki Province </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="federal">
+                                        <ul class="list-group" style="height: 295px; overflow-y: scroll;">
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href=""
+                                                    target="_blank">Official Portal of the Government of Nepal </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="https://mohp.gov.np/" target="_blank">Ministry of Health and
+                                                    Population </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="http://climate.mohp.gov.np/" target="_blank">Climate Change and
+                                                    Health </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="http://nhrc.gov.np/" target="_blank">Nepal Health Research
+                                                    Council </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="http://heoc.mohp.gov.np/" target="_blank">Health Emergency
+                                                    Operation Centre </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="https://nhtc.gov.np/" target="_blank">National Health Training
+                                                    Center Teku, Kathmandu </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="https://dohs.gov.np/" target="_blank">Department Health
+                                                    Services </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="other">
+                                        <ul class="list-group" style="height: 295px; overflow-y: scroll;">
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="https://www.who.int/nepal" target="_blank">WHO Nepal </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col col-md-5">
+                                <div class="text-center"><span class="h4">Office Location</span>
+                                    <div class="textwidget">
+                                        <hr>
+
+                                        <iframe class="enable-darkmode"
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.767786874417!2d84.00506589999999!3d28.214366899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595e79d5f9bd9%3A0x8044b8ed92c62a67!2sProvince%20Health%20Logistic%20Management%20Center%2C%20Pokhara!5e0!3m2!1sen!2snp!4v1657216523545!5m2!1sen!2snp&quot;"
+                                            width="100%" height="315" frameborder="0" style="border:0"
+                                            allowfullscreen=""></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col col-md-3 aboutInfo">
+                                <div class="text-center"><span class="h4">Contact Details</span></div>
+                                <div class="textwidget">
+                                    <hr>
+                                    <p class="text-danger">
+                                        Provincial Government <br>
+
+                                        Ministry of Health and Population <br>
+                                        <strong> Province Health Logistic Management Center</strong><br>
+
+                                        Gandaki Province, Pokhara, Nepal
+                                    </p>
+                                    <p> <em class="fa fa-phone-square"> </em> 061-536254, 061-536255</p>
+                                    <p><em class="fa fa-envelope"> </em> phlmcgandaki2076@gmail.com</p>
+                                    <p><em class="fa fa-globe"> </em> https://phsmc.gandaki.gov.np</p>
+                                    <!-- hitwebcounter Code START -->
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <section id="copyright" class="copyright">
+                    <div class="container flex-box">
+                        <div class="mrg-right-auto">
+                            Developed By:<a target="_blank" href="http://www.vtechnepal.com">Virtual Technology
+                                Pvt.Ltd.</a>
+                            This Site Has been Visited
+                            <!-- Default Statcounter code for PHLMC Gandaki https://phsmc.gandaki.gov.np/
+-->
+                            <script type="text/javascript">
+                                var sc_project = 12775304;
+                                var sc_invisible = 0;
+                                var sc_security = "f4c55632";
+                                var scJsHost = "https://";
+                                document.write("<sc" + "ript type='text/javascript' src='" + scJsHost +
+                                    "statcounter.com/counter/counter.js'></" + "script>");
+                            </script>
+                            <script type="text/javascript" src="https://statcounter.com/counter/counter.js"></script>
+                            <span class="statcounter"><a id="sc_counter_12775304" class="statcounter"
+                                    href="https://www.statcounter.com/" target="_blank"><img
+                                        src="https://c.statcounter.com/t.php?sc_project=12775304&amp;u1=247FF7573F7C4F11E22B469AE0AFA37C&amp;java=1&amp;security=f4c55632&amp;sc_snum=1&amp;sess=a8f3c4&amp;sc_rum_e_s=1162&amp;sc_rum_e_e=1204&amp;sc_rum_f_s=0&amp;sc_rum_f_e=1157&amp;p=0&amp;pv=10&amp;rcat=s&amp;rdomo=fb&amp;rdomg=3&amp;jg=3&amp;rr=20.18.17.17.17.16.14.12.12&amp;resolution=1366&amp;h=768&amp;camefrom=https%3A//phsmc.gandaki.gov.np/&amp;u=https%3A//phsmc.gandaki.gov.np/&amp;t=Province%20Health%20Logistic%20Management%20Center&amp;sc_random=0.30246338203049405"
+                                        alt="StatCounter - Free Web Tracker and Counter" border="0"
+                                        undefined=""></a></span>
+                            <noscript>
+                                <div class="statcounter"><a title="Web Analytics Made Easy -
+Statcounter" href="https://statcounter.com/" target="_blank"><img class="statcounter"
+                                            src="https://c.statcounter.com/12775304/0/f4c55632/0/"
+                                            alt="Web Analytics Made Easy - Statcounter"
+                                            referrerPolicy="no-referrer-when-downgrade"></a></div>
+                            </noscript>
+                            <!-- End of Statcounter Code -->
+                            Times
+                        </div>
+                        <div class="mrg-lef-auto">
+                            © Province Health Logistic Management Center 2022
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <script src="https://phsmc.gandaki.gov.np/js/jquery-3.6.0.min.js"></script>
+            <script src="https://phsmc.gandaki.gov.np/packages/bootstrap-4.5.3/dist/js/bootstrap.min.js"></script>
+
+            <script
+                src="https://phsmc.gandaki.gov.np/packages/breaking-news-ticker/breaking-news-ticker.min.js"></script>
+
+
+            <script type="text/javascript"
+                src="https://phsmc.gandaki.gov.np/packages/nepali.datepicker.v3.6/js/nepali.datepicker.v3.6.min.js"></script>
+            <script type="text/javascript">
+
+                $(document).ready(function () {
+
+                    $('.currentNepaliDate').text(function () {
+                        return (NepaliFunctions.GetBsFullDate(NepaliFunctions.GetCurrentBsDate(), true) + ', ' + NepaliFunctions.GetBsFullDayInUnicode(NepaliFunctions.GetCurrentBsDate(), true));
+                    });
+
+                    $('.currentEnglishDate').text(function () {
+                        return (NepaliFunctions.GetBsFullDate(NepaliFunctions.GetCurrentBsDate(), false) + ', ' + NepaliFunctions.GetBsFullDay(NepaliFunctions.GetCurrentBsDate()));
+                    });
+
+                    $('.nepaliDate').text(function () {
+                        ad_date_object = NepaliFunctions.ConvertToDateObject($(this).attr('englishDate'), "YYYY-MM-DD");
+                        bs_date_object = NepaliFunctions.AD2BS(ad_date_object);
+                        // bs_date_string = NepaliFunctions.ConvertDateFormat(bs_date_object, 'YYYY-MM-DD');
+                        bs_date_string = NepaliFunctions.GetBsFullDate(bs_date_object, true) + ', ' + NepaliFunctions.GetBsFullDayInUnicode(bs_date_object, true);
+                        return (convertNumberEnToNp(bs_date_string));
+
+                    });
+
+                    $('.nepali_number_convert').text(function () {
+                        return (convertNumberEnToNp($(this).attr('englishNumber')));
+
+                    });
+
+                    function convertNumberEnToNp($english_number) {
+                        var str = $english_number;
+                        var $english_number_array = str.split('');
+
+                        var $nepali_number = '';
+                        $.each($english_number_array, function (index, value) {
+                            switch (value) {
+                                case "0": $nepali_number += "०"; break;
+                                case "1": $nepali_number += "१"; break;
+                                case "2": $nepali_number += "२"; break;
+                                case "3": $nepali_number += "३"; break;
+                                case "4": $nepali_number += "४"; break;
+                                case "5": $nepali_number += "५"; break;
+                                case "6": $nepali_number += "६"; break;
+                                case "7": $nepali_number += "७"; break;
+                                case "8": $nepali_number += "८"; break;
+                                case "9": $nepali_number += "९"; break;
+                                default: $nepali_number += value; break;
+                            }
+                        });
+                        return $nepali_number;
+                    }
+                });
+            </script>
+            <script
+                src="https://phsmc.gandaki.gov.np/packages/breaking-news-ticker/breaking-news-ticker.min.js"></script>
+
+            <script>
+
+                $(document).ready(function () {
+
+                    var i;
+                    for (i = 1; i <= 0; i++) {
+                        $("#notice_" + i).modal('show');
+                    }
+                });
+
+                jQuery('#gallery').carousel({
+                    interval: 5000
+                })
+
+
+                // Modify each slide to contain five columns of images
+                jQuery('#gallery.carousel .carousel-item').each(function () {
+                    var minPerSlide = 4;
+                    var next = jQuery(this).next();
+                    if (!next.length) {
+                        next = jQuery(this).siblings(':first');
+                    }
+                    next.children(':first-child').clone().appendTo(jQuery(this));
+
+                    for (var i = 0; i < minPerSlide; i++) {
+                        next = next.next();
+                        if (!next.length) {
+                            next = jQuery(this).siblings(':first');
+                        }
+
+                        next.children(':first-child').clone().appendTo(jQuery(this));
+                    }
+                });
+
+                // Initialize carousel
+                jQuery(".carousel-item:first-of-type").addClass("active");
+                jQuery(".carousel-indicators:first-child").addClass("active");
+            </script>
+            <script src="https://phsmc.gandaki.gov.np/packages/aos-next/dist/aos.js"></script>
+            <script>
+                AOS.init(
+                    {
+                        offset: 100,
+                        duration: 800,
+                    }
+                );
+            </script>
+            <script>
+
+                $(document).ready(function () {
+                    // jQuery code
+
+                    //////////////////////// Prevent closing from click inside dropdown
+                    $(document).on('click', '.dropdown-menu', function (e) {
+                        e.stopPropagation();
+                    });
+                    $(document).on('click', '.dropdown-item', function (e) {
+                        e.stopPropagation();
+                        window.location = $(this).attr('href');
+                    });
+
+                    // make it as accordion for smaller screens
+                    if ($(window).width() < 992) {
+                        $('.dropdown-menu a').click(function (e) {
+                            e.preventDefault();
+                            if ($(this).next('.submenu').length) {
+                                $(this).next('.submenu').toggle();
+                            }
+                            $('.dropdown').on('hide.bs.dropdown', function () {
+                                $(this).find('.submenu').hide();
+                            })
+                        });
+                    }
+
+                });
+                jQuery(document).ready(function ($) {
+
+                    //Scroll totop
+                    //-----------------------------------------------//
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop() !== 0) {
+                            $(".scrollToTop").fadeIn();
+                        } else {
+                            $(".scrollToTop").fadeOut();
+                        }
+                    });
+
+                    $(".scrollToTop").click(function () {
+                        $("body,html").animate({ scrollTop: 0 }, 800);
+                    });
+                });
+                jQuery(window).ready(function () { });
+
+                //Scroll totop
+                //-----------------------------------------------//
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() !== 0) {
+                        $(".scrollToTop").fadeIn();
+                    } else {
+                        $(".scrollToTop").fadeOut();
+                    }
+                });
+
+                $(".scrollToTop").click(function () {
+                    $("body,html").animate({ scrollTop: 0 }, 800);
+                });
+                function fontchangeplus() {
+                    var paragraph = document.getElementById("html");
+                    paragraph.style.fontSize = 130 + "%";
+                }
+                function fontchangenormal() {
+                    var paragraph = document.getElementById("html");
+                    paragraph.style.fontSize = 100 + "%";
+                }
+                function fontchangeminus() {
+                    var paragraph = document.getElementById("html");
+                    paragraph.style.fontSize = 90 + "%";
+                }
+
+            </script>
+
+
+        </body>
+    </body>
+
+</html>

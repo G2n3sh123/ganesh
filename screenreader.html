@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+        <!-- Bootstrap Font Icon CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <body class="white-theme bg-hospital" data-aos-easing="ease" data-aos-duration="800" data-aos-delay="0">
+            <div class="scrollToTop" style="display: none;"><i class="fa fa-angle-up"></i></div>
+            <div class="top-bar  p-1 bg-hospital">
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-md-8 d-none d-sm-block">
+                            <ul class="list-group list-group-horizontal-xl">
+                                <li class="language-switcher list-group-item box">
+                                    <a href="suggestion.html"><i class="fa fa-comments"></i> सुझाव तथा गुनासो </a>
+                                </li>
+                                <li class="bandMode list-group-item box">
+
+                                    <a href="suggestion.html" style="display: -webkit-inline-box;"><i class="fa fa-spinner"></i> लो
+                                        ब्यान्डविड्थ</a>
+
+                                </li>
+                                <li class="themeMode list-group-item box">
+                                    <a href="screenreader.html"><i class="fa fa-wheelchair"></i> स्क्रीन रीडर </a>
+                                </li>
+                                <li class="list-group-item d-none d-sm-block">
+                                    <i class="fa fa-phone" aria-hidden="true"></i> ०६१-५३६२५४ , ०६१-५३६२५५
+                                </li>
+                                <li class="list-group-item d-none d-sm-block">
+                                    <i class="fa fa-calendar"></i>
+                                    <span class="currentNepaliDate">२३ भाद्र २०७९, बिहिवार</span>
+                                    <p></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 ">
+                            <ul class="list-group list-group-horizontal-xl float-right">
+
+                                <li class="language-switcher list-group-item  box">
+                                    <a href="english.html" style="display: -webkit-inline-box;"><i
+                                            class="fa fa-language"></i>
+                                        <div class="d-none d-md-block"> &nbsp; English</div>
+                                    </a>
+                                </li>
+                                <li class="themeMode list-group-item box">
+                                    <a href="" style="display: -webkit-inline-box;"><i
+                                            class="bi bi-moon" aria-hidden="true"></i>
+                                        <div class="d-none d-md-block"> &nbsp; Dark</div>
+                                    </a>
+
+                                </li>
+                                <li class="list-group-item fontResizer box 1">
+                                    <span onclick="fontchangeplus()">
+                                        A+
+                                    </span>
+
+                                    <span onclick="fontchangenormal()">
+                                        A
+                                    </span>
+
+                                    <span onclick="fontchangeminus()">
+                                        A-
+                                    </span>
+                                </li>
+
+                                <li class="list-group-item box">
+                                    <a target="_blank" href=""><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="list-group-item box">
+                                    <a target="_blank" href=""><i class="bi bi-twitter" aria-hidden="true"></i></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header bg-hospital container-flued" style="padding-bottom:1px;">
+                <div class="container aos-init aos-animate" data-aos="flip-down">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <center>
+                                <a href="https://phsmc.gandaki.gov.np"><img
+                                        src="https://phsmc.gandaki.gov.np/images/site-config/nepal-logo.png"
+                                        class="img-fluid img-logo" style="padding-top:16px; width: 125px;"></a>
+                            </center>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="custom-name" style="text-align:center;">
+                                <p class="govname" style="line-height:25px; margin:0;padding:0; font-size: 18px;">
+                                    प्रदेश सरकार<br>
+                                    स्वास्थ्य तथा जनसंख्या मन्त्रालय <br>
+                                </p>
+                                <h1 class="officename"
+                                    style="font-size:28px; margin:0px; line-height:40px; padding:0px">प्रदेश स्वास्थ्य
+                                    आपूर्ति व्यवस्थापन केन्द्र</h1>
+                                <p class="addressname" style="line-height:22px;margin:0;padding:0;font-size: 16px">
+                                    गण्डकी प्रदेश, पोखरा नेपाल
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex justify-content-center ">
+
+
+                            <img src="https://phsmc.gandaki.gov.np/images/logo/nepaliflag.gif"
+                                class="national-flag float-right d-none d-sm-block" style="width:90px; height:120px">
+                        </div>
+                    </div>
+                </div>
+
+
+                <header class="header-last aos-init aos-animate" data-aos="flip-down">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+        
+                                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                                    <div class="container-fluid">
+                                        <a class="navbar-brand" href="index.html">अगाडि आउनुहोस्</a>
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                            aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page" href="hamrobarema.html"> हाम्रो बारेमा</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page" href="message.html"> सूचना</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="news.html"> समाचार</a>
+                                                </li>
+                        
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#"> प्रकाशन</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#"> डाउनलोड</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#"> मिडिया</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">बारम्बार सोधिने प्रश्नहरु</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="contact.html"> सम्पर्क</a>
+                                                </li>
+                                            </ul>
+                        
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+            </div>
+            <div class="body-content aos-init aos-animate" data-aos="zoom-in">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="">गृहपृष्ठ </a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">स्क्रीन रीडर</li>
+                                </ol>
+                            </nav>
+                            <article>
+                                <h4 style="text-align: center;"><strong>स्क्रीन रीडर</strong></h4>
+                                <hr class="underlined">
+                                <span style="text-align: justify;">
+                                    <table border="1" cellpadding="5" cellspacing="0" style="width:100%"
+                                        summary="Information related to the various screen readers">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Screen Reader</th>
+                                                <th scope="col">Website</th>
+                                                <th scope="col">Free / Commercial</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Screen Access For All (SAFA)</td>
+                                                <td><a href=""
+                                                        target="_blank">http://www.nabdelhi.in</a></td>
+                                                <td>Free</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Non Visual Desktop Access (NVDA)</td>
+                                                <td><a href="http://www.nvda-project.org/"
+                                                        target="_blank">http://www.nvda-project.org</a></td>
+                                                <td>Free</td>
+                                            </tr>
+                                            <tr>
+                                                <td>System Access To Go</td>
+                                                <td><a href="http://www.satogo.com/"
+                                                        target="_blank">http://www.satogo.com/</a></td>
+                                                <td>Free</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </span>
+                                <div class="clearfix" style="border-top: 1px dashed #E9E9E9;"></div><br>
+                                <div class="social-media">
+                                    <a href=""
+                                        target="_blank" id="facebook">
+                                        <i class="bi bi-facebook b"></i> share
+                                    </a>
+                                    <a href=""
+                                        target="_blank" id="twitter c"><i class="bi bi-twitter"></i> Tweet
+                                    </a>
+                                    <a href=""
+                                        target="_blank" id="google d"><i class="bi bi-google"></i> Share
+                                    </a>
+                                </div>
+                            </article><!-- #post -->
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+
+            <div data-aos="flip-up" class="aos-init">
+                <footer id="footer" class="site-footer bg-light">
+                    <div class="container">
+                        <div class="row seven-cols-grid footer-grid">
+                            <div class="col-12 col col-md-4">
+                                <div class="text-center"><span class="h4">महत्वपूर्ण लिंकहरु</span></div>
+                                <hr>
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs quick-links">
+                                    <li class="nav-item" style="width:33.333333333333%">
+                                        <a class="nav-link active" data-toggle="tab" href="#province">प्रदेश तर्फ</a>
+                                    </li>
+                                    <li class="nav-item" style="width:33.333333333333%">
+                                        <a class="nav-link " data-toggle="tab" href="#federal">संघ तर्फ</a>
+                                    </li>
+                                    <li class="nav-item" style="width:33.333333333333%">
+                                        <a class="nav-link " data-toggle="tab" href="#other">अन्य</a>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="province">
+                                        <ul class="list-group" style="height: 295px; overflow-y: scroll;">
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="" target="_blank">मुख्यमन्त्री तथा
+                                                    मन्त्रिपरिषद्को कार्यालय गण्डकी प्रदेश </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="" target="_blank">स्वास्थ्य तथा
+                                                    जनसंख्या मन्त्रालय, गण्डकी प्रदेश </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="" target="_blank">स्वास्थ्य
+                                                    निर्देशनालय, गण्डकी प्रदेश </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="" target="_blank">प्रदेश
+                                                    जनस्वास्थ्य प्रयोगशाला, गण्डकी प्रदेश </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="" target="_blank">स्वास्थ्य तालिम
+                                                    केन्द्र, गण्डकी प्रदेश </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="federal">
+                                        <ul class="list-group" style="height: 295px; overflow-y: scroll;">
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href=""
+                                                    target="_blank">नेपाल सरकारको आधिकारिक पोर्टल </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="" target="_blank">स्वास्थ्य तथा जनसंख्या
+                                                    मन्त्रालय </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="" target="_blank">जलवायु परिवर्तन र
+                                                    स्वास्थ्य </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="" target="_blank">नेपाल स्वास्थ्य अनुसन्धान
+                                                    परिषद् </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="http://heoc.mohp.gov.np/" target="_blank">स्वास्थ्य आपातकालीन
+                                                    परिचालन केन्द्र </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="https://nhtc.gov.np/" target="_blank">राष्ट्रिय स्वास्थ्य
+                                                    प्रशिक्षण केन्द्र टेकु, काठमाडौं </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="https://dohs.gov.np/" target="_blank">स्वास्थ्य सेवा विभाग </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="other">
+                                        <ul class="list-group" style="height: 295px; overflow-y: scroll;">
+                                            <li class="list-group-item">
+                                                <span class="text-danger"><i class="fas fa-link"></i> &nbsp; </span>
+                                                <a href="https://www.who.int/nepal" target="_blank">WHO नेपाल </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col col-md-5">
+                                <div class="text-center"><span class="h4">कार्यालय भएकाे स्थान</span>
+                                    <div class="textwidget">
+                                        <hr>
+
+                                        <iframe class="enable-darkmode"
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.767786874417!2d84.00506589999999!3d28.214366899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595e79d5f9bd9%3A0x8044b8ed92c62a67!2sProvince%20Health%20Logistic%20Management%20Center%2C%20Pokhara!5e0!3m2!1sen!2snp!4v1657216523545!5m2!1sen!2snp&quot;"
+                                            width="100%" height="315" frameborder="0" style="border:0"
+                                            allowfullscreen=""></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col col-md-3 aboutInfo">
+                                <div class="text-center"><span class="h4">सम्पर्क ठेगाना</span></div>
+                                <div class="textwidget">
+                                    <hr>
+                                    <p class="text-danger">
+                                        प्रदेश सरकार <br>
+
+                                        स्वास्थ्य तथा जनसंख्या मन्त्रालय <br>
+                                        <strong> प्रदेश स्वास्थ्य आपूर्ति व्यवस्थापन केन्द्र</strong><br>
+
+                                        गण्डकी प्रदेश, पोखरा नेपाल
+                                    </p>
+                                    <p> <em class="fa fa-phone-square"> </em> ०६१-५३६२५४ , ०६१-५३६२५५</p>
+                                    <p><em class="fa fa-envelope"> </em> phlmcgandaki2076@gmail.com</p>
+                                    <p><em class="fa fa-globe"> </em> https://phsmc.gandaki.gov.np</p>
+                                    <!-- hitwebcounter Code START -->
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <section id="copyright" class="copyright">
+                    <div class="container flex-box">
+                        <div class="mrg-right-auto">
+                            Developed By:<a target="_blank" href="http://www.vtechnepal.com">Virtual Technology
+                                Pvt.Ltd.</a>
+                            This Site Has been Visited
+                            <!-- Default Statcounter code for PHLMC Gandaki https://phsmc.gandaki.gov.np/
+-->
+                            <script type="text/javascript">
+                                var sc_project = 12775304;
+                                var sc_invisible = 0;
+                                var sc_security = "f4c55632";
+                                var scJsHost = "https://";
+                                document.write("<sc" + "ript type='text/javascript' src='" + scJsHost +
+                                    "statcounter.com/counter/counter.js'></" + "script>");
+                            </script>
+                            <script type="text/javascript" src="https://statcounter.com/counter/counter.js"></script>
+                            <span class="statcounter"><a id="sc_counter_12775304" class="statcounter"
+                                    href="https://www.statcounter.com/" target="_blank"><img
+                                        src="https://c.statcounter.com/t.php?sc_project=12775304&amp;u1=247FF7573F7C4F11E22B469AE0AFA37C&amp;java=1&amp;security=f4c55632&amp;sc_snum=1&amp;sess=a8f3c4&amp;sc_rum_e_s=335&amp;sc_rum_e_e=370&amp;sc_rum_f_s=0&amp;sc_rum_f_e=331&amp;p=0&amp;pv=10&amp;rcat=s&amp;rdomo=fb&amp;rdomg=9&amp;jg=9&amp;rr=19.18.17.17.17.16.14.12.12&amp;resolution=1366&amp;h=768&amp;camefrom=https%3A//phsmc.gandaki.gov.np/feedback&amp;u=https%3A//phsmc.gandaki.gov.np/pages/screen-readers&amp;t=%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A6%E0%A5%87%E0%A4%B6%20%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A5%8D%E0%A4%AF%20%E0%A4%86%E0%A4%AA%E0%A5%82%E0%A4%B0%E0%A5%8D%E0%A4%A4%E0%A4%BF%20%E0%A4%B5%E0%A5%8D%E0%A4%AF%E0%A4%B5%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%BE%E0%A4%AA%E0%A4%A8%20%E0%A4%95%E0%A5%87%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%8D%E0%A4%B0&amp;sc_random=0.45025468539859337"
+                                        alt="StatCounter - Free Web Tracker and Counter" border="0"
+                                        undefined=""></a></span>
+                            <noscript>
+                                <div class="statcounter"><a title="Web Analytics Made Easy -
+Statcounter" href="https://statcounter.com/" target="_blank"><img class="statcounter"
+                                            src="https://c.statcounter.com/12775304/0/f4c55632/0/"
+                                            alt="Web Analytics Made Easy - Statcounter"
+                                            referrerPolicy="no-referrer-when-downgrade"></a></div>
+                            </noscript>
+                            <!-- End of Statcounter Code -->
+                            Times
+                        </div>
+                        <div class="mrg-lef-auto">
+                            © Province Health Logistic Management Center 2022
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <script src="https://phsmc.gandaki.gov.np/js/jquery-3.6.0.min.js"></script>
+            <script src="https://phsmc.gandaki.gov.np/packages/bootstrap-4.5.3/dist/js/bootstrap.min.js"></script>
+
+            <script
+                src="https://phsmc.gandaki.gov.np/packages/breaking-news-ticker/breaking-news-ticker.min.js"></script>
+
+
+            <script type="text/javascript"
+                src="https://phsmc.gandaki.gov.np/packages/nepali.datepicker.v3.6/js/nepali.datepicker.v3.6.min.js"></script>
+            <script type="text/javascript">
+
+                $(document).ready(function () {
+
+                    $('.currentNepaliDate').text(function () {
+                        return (NepaliFunctions.GetBsFullDate(NepaliFunctions.GetCurrentBsDate(), true) + ', ' + NepaliFunctions.GetBsFullDayInUnicode(NepaliFunctions.GetCurrentBsDate(), true));
+                    });
+
+                    $('.currentEnglishDate').text(function () {
+                        return (NepaliFunctions.GetBsFullDate(NepaliFunctions.GetCurrentBsDate(), false) + ', ' + NepaliFunctions.GetBsFullDay(NepaliFunctions.GetCurrentBsDate()));
+                    });
+
+                    $('.nepaliDate').text(function () {
+                        ad_date_object = NepaliFunctions.ConvertToDateObject($(this).attr('englishDate'), "YYYY-MM-DD");
+                        bs_date_object = NepaliFunctions.AD2BS(ad_date_object);
+                        // bs_date_string = NepaliFunctions.ConvertDateFormat(bs_date_object, 'YYYY-MM-DD');
+                        bs_date_string = NepaliFunctions.GetBsFullDate(bs_date_object, true) + ', ' + NepaliFunctions.GetBsFullDayInUnicode(bs_date_object, true);
+                        return (convertNumberEnToNp(bs_date_string));
+
+                    });
+
+                    $('.nepali_number_convert').text(function () {
+                        return (convertNumberEnToNp($(this).attr('englishNumber')));
+
+                    });
+
+                    function convertNumberEnToNp($english_number) {
+                        var str = $english_number;
+                        var $english_number_array = str.split('');
+
+                        var $nepali_number = '';
+                        $.each($english_number_array, function (index, value) {
+                            switch (value) {
+                                case "0": $nepali_number += "०"; break;
+                                case "1": $nepali_number += "१"; break;
+                                case "2": $nepali_number += "२"; break;
+                                case "3": $nepali_number += "३"; break;
+                                case "4": $nepali_number += "४"; break;
+                                case "5": $nepali_number += "५"; break;
+                                case "6": $nepali_number += "६"; break;
+                                case "7": $nepali_number += "७"; break;
+                                case "8": $nepali_number += "८"; break;
+                                case "9": $nepali_number += "९"; break;
+                                default: $nepali_number += value; break;
+                            }
+                        });
+                        return $nepali_number;
+                    }
+                });
+            </script>
+            <script src="https://phsmc.gandaki.gov.np/packages/aos-next/dist/aos.js"></script>
+            <script>
+                AOS.init(
+                    {
+                        offset: 100,
+                        duration: 800,
+                    }
+                );
+            </script>
+            <script>
+
+                $(document).ready(function () {
+                    // jQuery code
+
+                    //////////////////////// Prevent closing from click inside dropdown
+                    $(document).on('click', '.dropdown-menu', function (e) {
+                        e.stopPropagation();
+                    });
+                    $(document).on('click', '.dropdown-item', function (e) {
+                        e.stopPropagation();
+                        window.location = $(this).attr('href');
+                    });
+
+                    // make it as accordion for smaller screens
+                    if ($(window).width() < 992) {
+                        $('.dropdown-menu a').click(function (e) {
+                            e.preventDefault();
+                            if ($(this).next('.submenu').length) {
+                                $(this).next('.submenu').toggle();
+                            }
+                            $('.dropdown').on('hide.bs.dropdown', function () {
+                                $(this).find('.submenu').hide();
+                            })
+                        });
+                    }
+
+                });
+                jQuery(document).ready(function ($) {
+
+                    //Scroll totop
+                    //-----------------------------------------------//
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop() !== 0) {
+                            $(".scrollToTop").fadeIn();
+                        } else {
+                            $(".scrollToTop").fadeOut();
+                        }
+                    });
+
+                    $(".scrollToTop").click(function () {
+                        $("body,html").animate({ scrollTop: 0 }, 800);
+                    });
+                });
+                jQuery(window).ready(function () { });
+
+                //Scroll totop
+                //-----------------------------------------------//
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() !== 0) {
+                        $(".scrollToTop").fadeIn();
+                    } else {
+                        $(".scrollToTop").fadeOut();
+                    }
+                });
+
+                $(".scrollToTop").click(function () {
+                    $("body,html").animate({ scrollTop: 0 }, 800);
+                });
+                function fontchangeplus() {
+                    var paragraph = document.getElementById("html");
+                    paragraph.style.fontSize = 130 + "%";
+                }
+                function fontchangenormal() {
+                    var paragraph = document.getElementById("html");
+                    paragraph.style.fontSize = 100 + "%";
+                }
+                function fontchangeminus() {
+                    var paragraph = document.getElementById("html");
+                    paragraph.style.fontSize = 90 + "%";
+                }
+
+            </script>
+
+
+        </body>
+    </body>
+
+</html>
